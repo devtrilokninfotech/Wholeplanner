@@ -296,6 +296,11 @@ hr {
     box-shadow: none;
     min-width: 200px;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 56px;
+    border-radius: 12px;
     cursor: pointer !important;
 }
 
@@ -402,14 +407,9 @@ fieldset:disabled .btn {
     border-color: var(--theme-primary);
     font-size: 16px;
     color: var(--theme-background);
-    min-width: auto !important;
+    min-width: auto ;
     padding: 8px 16px 7px 16px;
     font-weight: 500;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    height: 56px;
-    border-radius: 12px;
 }
 .btn-primary-hover{
   transition: all 0.4s ease-in-out 0s;
@@ -436,7 +436,12 @@ fieldset:disabled .btn {
 
 .btn-full{display:flex;flex-direction:column;}
 
-
+.btn-back{
+    background-color: var(--theme-secondary-btn);
+    color: var(--theme-title);
+    border: none;
+    padding: 16px 16px;
+}
 
 
 /* Form & Input Style 
@@ -540,6 +545,8 @@ input[type="number"] {
 .min-width-100{min-width:100px;}
 .min-width-130{min-width:130px;}
 .min-width-150{min-width:150px;}
+.min-width-185{min-width:185px !important;}
+
 
 
 .mx-100{max-width:100%!important;}
@@ -670,4 +677,9 @@ span.login-btn-link-text {line-height: 20px;}
 
 .option-item input:checked+.content {
     color: #000;
+}
+.fixed-btn-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
