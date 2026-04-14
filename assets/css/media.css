@@ -217,11 +217,12 @@ h6,.h6 { font-size:14px; }
 .login-form{max-width: 390px;}
 .login-btn-row {display: flex;flex-wrap: wrap;}
 
-
-/*=== team management empty =====*/
-
 .mjc-wrap{font-size:13px!important;}
 
+/* setup-starter-tag screen */
+.option-checkbox {
+    gap: 8px;
+}
 
 }
 

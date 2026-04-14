@@ -245,18 +245,18 @@ img { margin-bottom:0; }
 }
 
 hr {
-    border-bottom: 2px dashed var(--theme-gray3);
-    margin-top: 20px;
-    margin-bottom: 20px;
+    border-bottom: 1px dashed var(--theme-gray3);
+    margin-top: 14px;
+    margin-bottom: 14px;
     width: 100%;
     border-top: 0;
     opacity: 1;
 }
 
 .hr {
-    border-bottom: 2px dashed var(--theme-gray3);
-    margin-top: 20px;
-    margin-bottom: 20px;
+    border-bottom: 1px dashed var(--theme-gray3);
+    margin-top: 14px;
+    margin-bottom: 14px;
     width: 100%;
     border-top: 0;
     opacity: 1;
@@ -458,7 +458,7 @@ label.form-label {font-size: 14px;color: var(--theme-title);margin-bottom: 10px;
 
 .form-group{margin-bottom:30px;position:relative;}
 .form-control[disabled] {opacity: 0.5; }
-.form-control.border {background-color:transparent;border: 2px solid #ECECEC !important;border-radius: 12px;box-shadow: none;-webkit-box-shadow: none;-moz-box-shadow: none;font-size: 16px;color:var(--theme-gray1);-webkit-appearance: none;font-family: 'SF Pro Display', sans-serif;font-weight: normal;padding:18px 16px;height: 56px;} 
+.form-control.border {background-color:transparent;border: 1px solid #D8DADC !important;border-radius: 12px;box-shadow: none;-webkit-box-shadow: none;-moz-box-shadow: none;font-size: 16px;color:var(--theme-title);-webkit-appearance: none;font-family: 'SF Pro Display', sans-serif;font-weight: normal;padding:18px 16px;height: 56px;} 
 
 /* Focus State CSS */
 .form-control.border:focus,.form-select.border:focus {box-shadow: none;-webkit-box-shadow: none;-moz-box-shadow: none;border-color:var(--theme-primary)!important;}
@@ -610,7 +610,7 @@ input[type="number"] {
     /* padding: 20px 0px 40px; */
 }
 .login-cform-main{width: 100%;}
-.login-cform-main p{font-size:16px;line-height:1.5;color: var(--theme-title);}
+.login-cform-main p{font-size:16px;line-height:1.5;color: var(--theme-gray2);}
 .login-form-btn-wrap.logo-form-wid .graytext {color: var(--theme-gray1);}
 .login-cform-main h1{font-weight:700;}
 .logo-form-wid{max-width:510px;margin-left:auto;margin-right:auto;width:100%;}
@@ -652,34 +652,96 @@ span.login-btn-link-text {line-height: 20px;}
 
 .option-item input {
     display: none;
-}
-
-.option-item .content p {
-    color: #4D4D4D;
-}
-
-.checkmark {
+  }
+  
+  .option-item .content p {
+    color: var(--theme-gray2);
+  }
+  
+  .checkmark {
     width: 22px;
     height: 22px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    display: flex;
+    border: 1.5px solid #D8DADC;
+    border-radius: 50px;
+    display: inline-block;
     position: relative;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     flex-shrink: 0;
 }
 
-.option-item input:checked+.content+.checkmark {
-    background: #c47a4a;
-    border-color: #c47a4a;
-}
 
-.option-item input:checked+.content {
-    color: #000;
-}
 .fixed-btn-wrap{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+  
+
+  .checkmark::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: #c47a4a;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 0.2s ease;
+  }
+    .option-item input:checked~.checkmark {
+        border-color: #c47a4a;
+    }
+
+    .option-item input:checked~.checkmark::after {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+/* setup-starter-tag screen */
+
+.set-form-title {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.option-checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .tag-item input {
+    display: none;
+  }
+  
+  .tag-item span {
+    display: inline-block;
+    align-items: center;
+    padding: 6px 12px;
+    border: 1px solid var(--theme-gray3);
+    border-radius: 20px;
+    font-size: 14px;
+    color: var(--theme-gray2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: var(--theme-background);
+  }
+  
+  .tag-item span:hover {
+    border-color: var(--theme-primary);
+    color: var(--theme-primary);
+  }
+  
+  .tag-item input:checked + span {
+    background: var(--theme-primary);
+    color: var(--theme-background);
+    border-color: var(--theme-primary);
+  }
+
+  .tag-item span {
+    transform: scale(1);
+  }
+  .tag-item input:checked + span {
+    transform: scale(1.05);
+  }
