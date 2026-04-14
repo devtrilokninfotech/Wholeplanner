@@ -630,3 +630,49 @@ span.login-btn-link-text {line-height: 20px;}
     font-size: 16px;
     font-weight: 500;
 }
+
+/* setup-account screen */
+.option-box {
+    border: 1px solid #D8DADC;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 18px 16px;
+  }
+  
+  .option-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .option-item input {
+    display: none;
+  }
+  
+  .option-item .content p {
+    color: #4D4D4D;
+  }
+  
+  .checkmark {
+    width: 22px;
+    height: 22px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  
+  .option-item input:checked + .content + .checkmark {
+    background: #c47a4a;
+    border-color: #c47a4a;
+  }
+  
+  
+  .option-item input:checked + .content {
+    color: #000;
+  }
