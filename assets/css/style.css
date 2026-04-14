@@ -459,11 +459,11 @@ label.form-label {font-size: 14px;color: var(--theme-title);margin-bottom: 10px;
 .form-control.border:focus,.form-select.border:focus {box-shadow: none;-webkit-box-shadow: none;-moz-box-shadow: none;border-color:var(--theme-primary)!important;}
 
 /* Placeholder CSS */
-.form-control.border::placeholder{color:var(--theme-title);font-weight:normal;font-size:14px;}
-.form-control.border::-moz-placeholder{color:var(--theme-title);font-weight:normal;font-size:14px;}
-.form-control.border:-ms-input-placeholder{color:var(--theme-title);font-weight:normal;font-size:14px;}
-.form-control.border::-webkit-input-placeholder{color:var(--theme-title);font-weight:normal;font-size:14px;}
-.form-control.border::-o-input-placeholder{color:var(--theme-title);font-weight:normal;font-size:14px;}
+.form-control.border::placeholder{color:var(--theme-gray1);font-weight:200;font-size:14px;}
+.form-control.border::-moz-placeholder{color:var(--theme-gray1);font-weight:200;font-size:14px;}
+.form-control.border:-ms-input-placeholder{color:var(--theme-gray1);font-weight:200;font-size:14px;}
+.form-control.border::-webkit-input-placeholder{color:var(--theme-gray1);font-weight:200;font-size:14px;}
+.form-control.border::-o-input-placeholder{color:var(--theme-gray1);font-weight:200;font-size:14px;}
 textarea.form-control.border{height:90px;}
 
 input::-webkit-autofill,
