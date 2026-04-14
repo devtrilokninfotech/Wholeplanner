@@ -1,0 +1,515 @@
+
+/*=========================================================
+Large devices 
+===========================================================*/
+
+
+@media(max-width:1899px) {
+
+
+}
+
+
+@media(max-width:1799px) {
+
+}
+
+
+@media(max-width:1699px) {
+.w-240 {
+    width: 190px;
+}
+
+
+
+}
+
+
+
+
+@media (max-width:1599px) {
+
+
+
+h1,.h1 { font-size:34px; }
+h2,.h2 { font-size:24px; }
+h3,.h3 { font-size:22px; }
+h4,.h4 { font-size:18px; }
+h5,.h5 { font-size:16px; }  
+h6,.h6 { font-size:14px; }
+
+
+.fs-14{font-size:13px !important;}
+.fs-16{font-size:15px !important;}
+.fs-18{font-size:17px !important;}
+.fs-20{font-size:19px !important;}
+.fs-22{font-size:21px !important;}
+.fs-26{font-size:24px !important;}
+
+.btn.btn-outline,
+.btn.btn-black{height: 42px;}
+.btn.btn-gray,
+.btn.btn-primary{height: 45px;font-size: 15px;padding: 8px 12px;}
+.login-btn-col.g-logo .login-btn-link-text, .login-btn-col.apple-logo .login-btn-link-text{font-size: 15px;}
+.form-control.border {height:45px;font-size: 15px;padding: 8px 12px;}
+.form-control.border::placeholder { font-size: 13px;}
+.form-control.border::-moz-placeholder { font-size: 13px;}
+.form-control.border:-ms-input-placeholder { font-size: 13px;}
+.form-control.border::-webkit-input-placeholder { font-size: 13px;}
+.form-control.border::-o-input-placeholder { font-size: 13px;}
+
+
+.custom-table-main th,
+.custom-table-main td{
+    font-size: 14px;
+}
+.totalAmountPayable-main th, .totalAmountPayable-main td {
+    padding: 16px 0;
+}
+
+.min-width-210{min-width:180px;}
+.min-width-100{min-width:80px;}
+.min-width-130{min-width:110px;}
+.min-width-150{min-width:130px;}
+
+
+.offcanvas-btn.btn{font-size:14px;padding:11px 20px;}
+
+/*=== Login ===*/
+
+
+.login-sec-cu-btn.btn{font-size:16px;padding:8px 13px 7px 13px;}
+.login-sec-cu-icon{width:24px;height:24px;margin-top:-2px;}
+.btn{font-size:15px;padding:9px 14px 8px 14px;min-width: 180px;}
+.login-sec-cu-btn-wrap{padding-bottom:80px;}
+.logo-form-wid{max-width:460px;}
+.login-cform-main p{font-size:14px;}
+label.form-label{font-size:14px;margin-bottom:8px;}
+.password-icon i{font-size:16px;height:16px;right:12px;}
+.password-icon .form-control{padding-right:35px!important;}
+.login-cform-main{height:calc(100% - 124px);}
+.login-form-forpass-link{font-size:14px;margin-bottom: 20px;}
+.ft-links a{font-size:14px;}
+/* .login-sec-logo img{max-width:371px;} */
+/* .login-sec-right-con{padding:20px 35px 0px;} */
+.form-mobile-num .country-code{top:15px;}
+.profile-preview{width:120px;height:120px;}
+.profile-preview .imageUpload-review{width:120px;height:120px;}
+
+.btn-primary-hover{font-size: 14px !important;}
+.login-logo {
+    margin-bottom: 60px;
+}
+.login-form {
+    padding-top: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+.login-form-btn-wrap.logo-form-wid .graytext {
+    margin-bottom: 10px;
+}
+.login-btn-link.btn.btn-outline,
+.login-btn-link.btn.btn-black {
+    border-radius: 10px;
+}
+
+}
+
+
+
+
+@media(max-width:1499px) {
+
+
+h1,.h1 { font-size:32px; }
+h2,.h2 { font-size:22px; }
+h3,.h3 { font-size:20px; }
+h4,.h4 { font-size:16px; }
+h5,.h5 { font-size:16px; }  
+h6,.h6 { font-size:14px; }
+
+
+.fs-14{font-size:13px !important;}
+.fs-16{font-size:14px !important;}
+.fs-18{font-size:15px !important;}
+.fs-20{font-size:17px !important;}
+.fs-22{font-size:20px !important;}
+.fs-26{font-size:23px !important;}
+
+
+
+
+.btn{padding:8px 10px 7px 10px;}
+
+
+/*=== Login ===*/
+
+
+.login-sec-cu-btn-wrap{padding-bottom:65px;}
+.login-cform-main{height:calc(100% - 106px);}
+.logo-form-wid{max-width:550px;}
+.login-sec-logo img{max-width:550px;}
+/* .login-sec-right-con{padding:20px 30px 0px;} */
+.btn{font-size:14px;}
+.login-sec-cu-btn.btn{font-size:15px;}
+.btn{min-width:170px;}
+
+
+
+}
+
+
+
+@media (max-width: 1399px) { 
+
+h1,.h1 { font-size:30px; }
+h2,.h2 { font-size:22px; }
+h3,.h3 { font-size:20px; }
+h4,.h4 { font-size:16px; }
+h5,.h5 { font-size:16px; }  
+h6,.h6 { font-size:14px; }
+
+.fs-14{font-size:12px !important;}
+.fs-16{font-size:14px !important;}
+.fs-18{font-size:15px !important;}
+.fs-20{font-size:17px !important;}
+.fs-22{font-size:19px !important;}
+.fs-26{font-size:22px !important;}
+
+/*=== Login ===*/
+
+.logo-form-wid{max-width:410px;}
+.login-cform-main{height:calc(100% - 105px);}
+/* .whole-logo{max-width:500px;} */
+.btn{min-width:160px;}
+.profile-preview{width:110px;height:110px;}
+.profile-preview .imageUpload-review{width:110px;height:110px;}
+
+
+}
+
+
+@media(max-width:1299px) {
+
+
+h1,.h1 { font-size:28px; }
+h2,.h2 { font-size:22px; }
+h3,.h3 { font-size:20px; }
+h4,.h4 { font-size:16px; }
+h5,.h5 { font-size:16px; }  
+h6,.h6 { font-size:14px; }
+
+
+.fs-14{font-size:12px !important;}
+.fs-16{font-size:13px !important;}
+.fs-18{font-size:14px !important;}
+.fs-20{font-size:16px !important;}
+.fs-22{font-size:18px !important;}
+.fs-26{font-size:21px !important;}
+
+
+/*=== Login ===*/
+
+.logo-form-wid{max-width:390px;}
+/* .whole-logo{max-width:390px;} */
+.login-form{max-width: 390px;}
+.login-btn-row {display: flex;flex-wrap: wrap;}
+
+
+/*=== team management empty =====*/
+
+.mjc-wrap{font-size:13px!important;}
+
+
+}
+
+
+
+@media (max-width: 1199.98px) { 
+
+
+
+
+h1,.h1 { font-size:26px; }
+h2,.h2 { font-size:22px; }
+h3,.h3 { font-size:20px; }
+h4,.h4 { font-size:16px; }
+h5,.h5 { font-size:16px; }  
+h6,.h6 { font-size:14px; }
+
+
+.fs-14{font-size:12px !important;}
+.fs-16{font-size:13px !important;}
+.fs-18{font-size:14px !important;}
+.fs-20{font-size:15px !important;}
+.fs-22{font-size:17px !important;}
+.fs-26{font-size:20px !important;}
+
+
+
+.form-control.border::placeholder { font-size: 14px;}
+.form-control.border::-moz-placeholder { font-size: 14px;}
+.form-control.border:-ms-input-placeholder { font-size: 14px;}
+.form-control.border::-webkit-input-placeholder { font-size: 14px;}
+.form-control.border::-o-input-placeholder { font-size: 14px;}
+
+
+/*=== Login ===*/
+
+.setacc-form-la label.form-label{font-size:12px;}
+.profile-preview{width:100px;height:100px;}
+.profile-preview .imageUpload-review{width:100px;height:100px;}
+
+.login-sec-right-con {
+    padding: 45px;
+}
+.login-logo {
+    margin-bottom: 40px;
+}
+.whole-logo {
+    max-width: 170px;
+}
+
+
+}
+
+
+/*=========================================================
+// Medium devices (tablets, less than 992px)
+===========================================================*/
+
+
+
+
+@media (max-width: 991.98px) {
+
+
+
+h1,.h1 { font-size:26px; }
+h2,.h2 { font-size:20px; }
+h3,.h3 { font-size:18px; }
+h4,.h4 { font-size:16px; }
+h5,.h5 { font-size:16px; }  
+h6,.h6 { font-size:14px; }
+
+
+.fs-14{font-size:12px !important;}
+.fs-16{font-size:13px !important;}
+.fs-18{font-size:14px !important;}
+.fs-20{font-size:15px !important;}
+.fs-22{font-size:17px !important;}
+.fs-26{font-size:19px !important;}
+
+
+
+
+/*=== Login ===*/
+
+.login-sec-left-con{padding:40px 0px 20px;height:auto;}
+.ft-links a{font-size:14px;}
+.login-sec-left-wrap-m{padding:0px 15px;background:transparent;height:auto;}
+.login-sec-right-con{padding:0px 0px;height:auto;}
+.login-cform-main{height:auto;background:#fff;padding:30px 20px 20px;border-radius:20px;}
+.password-icon i{right:12px;}
+.form-mobile-num .country-code{top:13px;}
+.login-sec{height:auto;display:block;}
+.login-sec-row{height:auto;}
+.login-sec-left-wrap{height:auto;}
+.login-sec-right-set-wrap{height:auto;}
+.setacc-form{height:auto;}
+.login-sec-right-wrap-h{height:auto;}
+.btn{border-radius:10px;min-width:140px;}
+.setacc-form-la label.form-label{font-size:14px;}
+.rightleft-line span{background-color: #fff;font-size: 15px;}
+.login-sec-right-main{max-width: 750px;padding: 20px 0px 40px;}
+.login-sec-right-con{box-shadow: none;}
+.login-btn-link.btn.btn-outline, 
+.login-btn-link.btn.btn-black {
+    border-radius: 10px;
+}
+
+}
+
+
+
+/*=========================================================
+// Small devices (landscape phones, less than 768px)
+===========================================================*/
+
+
+@media (max-width: 767.98px) { 
+
+
+h1,.h1 { font-size:24px; }
+h2,.h2 { font-size:20px; }
+h3,.h3 { font-size:18px; }
+h4,.h4 { font-size:16px; }
+h5,.h5 { font-size:16px; }  
+h6,.h6 { font-size:14px; }
+
+.btn.btn-gray,
+.btn.btn-primary{height: 45px;padding: 8px 12px;font-size: 14px;}
+.form-control.border {height:45px;padding: 8px 12px;font-size: 13px;}
+.form-control.border::placeholder { font-size: 12px;}
+.form-control.border::-moz-placeholder { font-size: 12px;}
+.form-control.border:-ms-input-placeholder { font-size: 12px;}
+.form-control.border::-webkit-input-placeholder { font-size: 12px;}
+.form-control.border::-o-input-placeholder { font-size: 12px;}
+.login-btn-col.g-logo .login-btn-link-text, .login-btn-col.apple-logo .login-btn-link-text {font-size: 14px;}
+
+
+.btn{min-width:110px;}
+
+
+/*=== Login ===*/
+
+.whole-logo{max-width:160px;}
+.login-sec-cu-btn.btn{text-indent:-99999px;padding:8px;}
+.login-sec-cu-icon{margin:0;}
+.bck-btn.btn-outline{text-indent:-99999px;min-width:auto;padding:7px;}
+
+
+
+}
+
+
+/*=========================================================
+Extra small devices (portrait phones, less than 576px)
+===========================================================*/
+
+
+@media (max-width: 575.98px) { 
+
+
+h1,.h1 { font-size:22px; }
+h2,.h2 { font-size:20px; }
+h3,.h3 { font-size:18px; }
+h4,.h4 { font-size:16px; }
+h5,.h5 { font-size:16px; }  
+h6,.h6 { font-size:14px; }
+
+p { font-size: 14px; }
+
+.btn{min-width:105px;}
+.offcanvas-btn-wrap .btn{margin:2px;}
+
+.whole-logo {
+    max-width: 140px;
+}
+
+
+
+}
+
+
+
+
+@media (max-width:399px) {
+
+
+
+
+
+	
+
+}
+
+
+@media(min-width:992px) and (max-width:1200px){
+    
+}
+
+
+@media(min-width:1200px) and (max-height:700px) {
+
+
+/*=== Login =====*/
+
+
+.login-sec-cu-btn-wrap{padding-bottom:60px;}
+.login-sec-cu-icon{width:23px;height:23px;margin-top:-2px;}
+.whole-logo{max-width:341px;}
+.login-cform-main{height:calc(100% - 103px);}
+.login-cform-main h1{font-size:26px;}
+.login-cform-main p{font-size:14px;}
+.login-form{padding-top:30px;}
+label.form-label{font-size:14px;margin-bottom:8px;}
+.login-form-forpass-link{font-size:14px;}
+.btn{font-size:14px;padding:11px 14px 9px 14px;min-width:160px;}
+.login-sec-cu-btn.btn{font-size:16px;padding:8px 12px;min-width:auto;}
+.ft-links a{font-size:14px;}
+.profile-preview{width:110px;height:110px;}
+.profile-preview .imageUpload-review{width:110px;height:110px;}
+.setup-acc-logo-wrap .profile-edit{padding-top:12px;}
+.form-group{margin-bottom:15px;}
+
+
+}
+
+
+@media(min-width:1200px) {
+
+
+
+
+
+}
+
+
+
+@media(min-width:1366px) {
+
+
+
+}
+
+
+@media(min-width:1400px) {
+
+
+
+
+
+}
+
+
+
+
+
+@media(min-width:1600px) {
+
+
+}
+
+
+@media(min-width:1800px) {
+
+/*== Dashboard with upcoming and all job ====*/
+
+
+
+
+}
+
+
+@media(min-width:1900px) {
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

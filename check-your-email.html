@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="date=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="format-detection" content="email=no">
+
+  <title>WholePlanner | Ckeck-your-email</title>
+
+  <!-- ================ /FONT Family =================== -->
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+  <link rel="stylesheet" type="text/css" href="assets/font/font-family/stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="assets/font/font-awesome/css/font-awesome.min.css">
+  <!-- ================ /FONT Family =================== -->
+
+  <!-- =================== /WEB CSS BOC ==================== -->
+
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/media.css">
+
+  <!-- =================== /WEB CSS EOC ==================== -->
+
+
+</head>
+
+<body>
+
+  <!-- ====== /WRAPPER BOC ====== -->
+  <div class="page-wrapper">
+
+    <!-- ====== /CONTENT BOC ====== -->
+    <section class="login-sec">
+      <div class="container-fluid px-lg-0">
+        <div class="row login-sec-row mx-lg-0">
+          <div class="col-lg-7 col-12 px-lg-0">
+            <div class="login-sec-left-con">
+              <div class="login-sec-left-wrap-m">
+                <div class="login-sec-left-wrap">
+                  <div class="login-sec-logo d-none d-lg-block">
+                    <a href="#">
+                      <img src="assets/images/mainlogo.png" class="img-fluid" alt="Image">
+                    </a>
+                  </div>
+                  <div class="text-center d-block d-lg-none">
+                    <img src="assets/images/logo.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-12 px-lg-0">
+            <div class="login-sec-right-con align-items-center">
+              <div class="login-sec-right-wrap login-sec-right-wrap-h">
+                <div class="login-sec-right-main">
+                  <div class="login-form-main login-cform-main">
+                    <div class="login-logo text-center d-none d-lg-block">
+                      <a href="#" class="login-sec-cu-btn">
+                        <img src="assets/images/logo.png" alt="" class="whole-logo">
+                      </a>
+                    </div>
+                    <div class="logo-form-wid">
+                      <h1 class="h1">Check your email</h1>
+                      <p class="mb-0">
+                        We sent a 4-digit code to <span class="text-primary">you@gmail.com</span>
+                      </p>
+                   </div>
+                    <form class="login-form">
+                      <div class="logo-form-la">
+                        <div class="form-group">
+                          <label for="form-verification" class="form-label">Verification code</label>
+                          <div class="verification-code-inputs">
+                            <input type="text" maxlength="1" class="code-input" id="code-input-1" data-index="0" autocomplete="off">
+                            <input type="text" maxlength="1" class="code-input" id="code-input-2" data-index="1" autocomplete="off">
+                            <input type="text" maxlength="1" class="code-input" id="code-input-3" data-index="2" autocomplete="off">
+                            <input type="text" maxlength="1" class="code-input" id="code-input-4" data-index="3" autocomplete="off">
+                          </div>
+                          <div class="resend-code-wrap text-center">
+                            <p class="text-center fs-14 graytext">Didn’t get the code? <a href="#"><span class="text-primary fw-bold">Resend code (00:10)</span></a></p>
+                          </div>
+                        </div>
+                    
+                      </div>
+                      <div class="login-form-btn-wrap logo-form-wid">
+                        <div class="btn-full mb-3">
+                          <a class="btn btn-primary btn-continue" href="#">Continue</a>
+                        </div>
+                        <p class="text-center">Back to <a href="#"><span class="text-primary fw-bold">Sign Up</span></a></p>
+                    
+                      </div>
+                    
+                    </form>
+                  </div>
+                </div>               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== /CONTENT EOC ====== -->
+
+
+  </div>
+  <!-- ====== /WRAPPER EOC ====== -->
+
+  <!-- =================== /WEB JS BOC ==================== -->
+  <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+  <script src="assets/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+  <script src="assets/js/custom.js" type="text/javascript"></script>
+
+  <!-- =================== /WEB JS BOC ==================== -->
+
+  <script>
+    // Verification Code Input Handling
+    document.addEventListener('DOMContentLoaded', function() {
+        const inputs = document.querySelectorAll('.code-input');
+        
+        inputs.forEach((input, index) => {
+            // Handle input
+            input.addEventListener('input', function(e) {
+                const value = e.target.value;
+                
+                // Only allow numbers
+                if (!/^\d*$/.test(value)) {
+                    e.target.value = '';
+                    return;
+                }
+                
+                // Move to next input if value entered
+                if (value.length === 1 && index < inputs.length - 1) {
+                    inputs[index + 1].focus();
+                }
+                
+                // Check if all inputs are filled
+                checkAllFilled();
+            });
+            
+            // Handle backspace
+            input.addEventListener('keydown', function(e) {
+                if (e.key === 'Backspace' && !e.target.value && index > 0) {
+                    inputs[index - 1].focus();
+                }
+            });
+            
+            // Handle paste
+            input.addEventListener('paste', function(e) {
+                e.preventDefault();
+                const pastedData = e.clipboardData.getData('text').trim();
+                
+                // Only process if pasted data contains only numbers
+                if (/^\d+$/.test(pastedData)) {
+                    const digits = pastedData.split('').slice(0, 4);
+                    digits.forEach((digit, i) => {
+                        if (inputs[i]) {
+                            inputs[i].value = digit;
+                        }
+                    });
+                    
+                    // Focus on the last filled input or next empty
+                    const lastIndex = Math.min(digits.length - 1, inputs.length - 1);
+                    inputs[lastIndex].focus();
+                    checkAllFilled();
+                }
+            });
+        });
+        
+        // Check if all inputs are filled
+        function checkAllFilled() {
+            const allFilled = Array.from(inputs).every(input => input.value.length === 1);
+            const continueBtn = document.querySelector('.btn-continue');
+            
+            if (allFilled) {
+                continueBtn.classList.add('active');
+            } else {
+                continueBtn.classList.remove('active');
+            }
+        }
+        
+        // Form submit
+        document.querySelector('.login-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const code = Array.from(inputs).map(input => input.value).join('');
+            
+            if (code.length === 4) {
+                console.log('Verification code:', code);
+                // Add your verification logic here
+                alert('Code submitted: ' + code);
+            } else {
+                alert('Please enter the complete 4-digit code');
+            }
+        });
+    });
+</script>
+
+</body>
+
+</html>
