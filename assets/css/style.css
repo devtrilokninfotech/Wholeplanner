@@ -19,6 +19,7 @@ body {
     --theme-background:#FFFFFF;
     --theme-black: #000000;
     --theme-primary:#C67C4E;
+    --theme-primary-light: #FBEDE5;
     --theme-text-color: #161212;
 
     --theme-secondary-btn: #E4E4E4;
@@ -29,7 +30,9 @@ body {
     --theme-gray1: #808080;
     --theme-gray2: #4D4D4D;
     --theme-gray3: #D8DADC;
+    --theme-gray4: #797979;
     --theme-title: #242424;
+    --theme-header-title: #191C1D;
     --theme-icon: #666666;
 }
 
@@ -178,6 +181,7 @@ html {
 .text_red { color: var(--theme-red) !important; }
 
 .bg-primary { background-color: var(--theme-primary) !important; }
+.bg-primary-light { background-color: var(--theme-primary-light) !important; }
 .bg_title { background-color: var(--theme-title) !important; }
 .bg_gray1 { background-color: var(--theme-gray1) !important; }
 .bg_gray2 { background-color: var(--theme-gray2) !important; }
@@ -515,6 +519,26 @@ input[type="number"] {
 /* Spacing Classes */
 .p-14{padding:14px;}
 
+.ellipsis-1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: break-all;
+}
+.ellipsis-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.transition-4{
+    transition: all .4s ease-in-out 0s;
+    -webkit-transition: all .4s ease-in-out 0s;
+    -moz-transition: all .4s ease-in-out 0s;
+    -ms-transition: all .4s ease-in-out 0s;
+    -o-transition: all .4s ease-in-out 0s;
+}
 
 /* Custom Width Classes */
 .width-p-1{width:1%;}

@@ -14,3 +14,13 @@ $(document).ready(function(){
   /* Password Show Hide End */
 
 });
+
+
+/*********** Sidebar toggle JS Start ***********/
+
+    $(".sidebar-toggle").click(function (event) {
+        event.preventDefault(); // Prevent default anchor action
+        $("body").toggleClass("sidebar-show-hide");
+    });
+
+/*********** Sidebar toggle JS End ***********/
