@@ -732,14 +732,6 @@ span.login-btn-link-text {line-height: 20px;}
     border-color: var(--theme-primary);
 }
 
-.tag-item span {
-    transform: scale(1);
-}
-
-.tag-item input:checked+span {
-    transform: scale(1.05);
-}
-
 /* setup-starter-tag screen */
 .fixed-btn-wrap {
     display: flex;
