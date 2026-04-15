@@ -733,7 +733,7 @@ span.login-btn-link-text {line-height: 20px;}
 }
 
 /* setup-starter-tag screen */
-.fixed-btn-wrap {
+.starter-tag-wrap .fixed-btn-wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
