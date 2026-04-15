@@ -652,13 +652,13 @@ span.login-btn-link-text {line-height: 20px;}
 
 .option-item input {
     display: none;
-  }
-  
-  .option-item .content p {
+}
+
+.option-item .content p {
     color: var(--theme-gray2);
-  }
-  
-  .checkmark {
+}
+
+.checkmark {
     width: 22px;
     height: 22px;
     border: 1.5px solid #D8DADC;
@@ -670,15 +670,7 @@ span.login-btn-link-text {line-height: 20px;}
     flex-shrink: 0;
 }
 
-
-.fixed-btn-wrap{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-  
-
-  .checkmark::after {
+.checkmark::after {
     content: "";
     width: 12px;
     height: 12px;
@@ -689,14 +681,15 @@ span.login-btn-link-text {line-height: 20px;}
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     transition: 0.2s ease;
-  }
-    .option-item input:checked~.checkmark {
-        border-color: #c47a4a;
-    }
+}
 
-    .option-item input:checked~.checkmark::after {
-        transform: translate(-50%, -50%) scale(1);
-    }
+.option-item input:checked~.checkmark {
+    border-color: #c47a4a;
+}
+
+.option-item input:checked~.checkmark::after {
+    transform: translate(-50%, -50%) scale(1);
+}
 
 /* setup-starter-tag screen */
 
@@ -709,13 +702,13 @@ span.login-btn-link-text {line-height: 20px;}
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-  }
-  
-  .tag-item input {
+}
+
+.tag-item input {
     display: none;
-  }
-  
-  .tag-item span {
+}
+
+.tag-item span {
     display: inline-block;
     align-items: center;
     padding: 6px 12px;
@@ -726,22 +719,56 @@ span.login-btn-link-text {line-height: 20px;}
     cursor: pointer;
     transition: all 0.3s ease;
     background: var(--theme-background);
-  }
-  
-  .tag-item span:hover {
+}
+
+.tag-item span:hover {
     border-color: var(--theme-primary);
     color: var(--theme-primary);
-  }
-  
-  .tag-item input:checked + span {
+}
+
+.tag-item input:checked+span {
     background: var(--theme-primary);
     color: var(--theme-background);
     border-color: var(--theme-primary);
-  }
+}
 
-  .tag-item span {
+.tag-item span {
     transform: scale(1);
-  }
-  .tag-item input:checked + span {
+}
+
+.tag-item input:checked+span {
     transform: scale(1.05);
-  }
+}
+
+/* setup-starter-tag screen */
+.fixed-btn-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding: 20px 0 30px;
+    max-width: 100%;
+}
+.starter-tag-wrap{
+    padding: 140px 40px 0;
+}
+.starter-tag-wrap .login-sec-right-main{
+    max-width: 100%;
+    width: 100%;
+}
+.starter-tag-wrap .login-sec-right-wrap-h{
+    align-items: initial;
+}
+.starter-tag-wrap .login-cform-main{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.starter-tag-wrap .logo-form-la.logo-form-wid{
+    flex-grow: 1;
+}
+.starter-tag-wrap .login-form{
+    height: 100%;
+    max-width: 100%;
+    width: 100%;
+}
