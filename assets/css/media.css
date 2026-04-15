@@ -115,6 +115,11 @@ label.form-label{font-size:14px;margin-bottom:8px;}
     border-radius: 10px;
 }
 
+/* setup-startertag1 screen */
+.form-group .set-form-title {
+    font-size: 13px;
+}
+
 }
 
 

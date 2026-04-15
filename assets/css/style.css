@@ -693,7 +693,7 @@ span.login-btn-link-text {line-height: 20px;}
 
 /* setup-starter-tag screen */
 
-.set-form-title {
+.form-group .set-form-title {
     font-size: 14px;
     margin-bottom: 15px;
 }
@@ -717,7 +717,7 @@ span.login-btn-link-text {line-height: 20px;}
     font-size: 14px;
     color: var(--theme-gray2);
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: .4s ease;
     background: var(--theme-background);
 }
 
