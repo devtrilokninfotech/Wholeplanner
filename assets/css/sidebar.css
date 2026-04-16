@@ -188,16 +188,16 @@
 
 .sidebar-show-hide .main-sidebar .sb-nav-item .sb-nav-link .countbadge {
     right: 10px;
-    top: 2px;
+    transform: scale(0.8);
+    will-change: transform;
+    transform-origin: 8px -36px;
 }
 
 .main-sidebar .sb-nav-item .sb-nav-link .countbadge {
     position: absolute;
     right: 16px;
     z-index: 1;
-    transform: scale(0.8);
-    will-change: transform;
-    transform-origin: 14px -22px;
+    outline: 3px solid #fff;
 }
 
 .sidebar-show-hide .main-header nav.main-header {

@@ -538,6 +538,12 @@ input[type="number"] {
 
 /* Spacing Classes */
 .p-14{padding:14px;}
+.p20{
+    padding: 20px;
+}
+.p30{
+    padding: 30px;
+}
 
 
 
@@ -861,4 +867,13 @@ span.login-btn-link-text {line-height: 20px;}
     -moz-transform: none;
     -ms-transform: none;
     -o-transform: none;
+}
+
+
+
+/*===============================================================================
+    Profile Page
+=================================================================================*/
+.cm-layout{
+    background-color: var(--theme-body);
 }
