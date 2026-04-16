@@ -813,13 +813,25 @@ span.login-btn-link-text {line-height: 20px;}
 .modal-dialog { width: 100%; display: flex; align-items: center; justify-content: center; }
 .carousel-item img { max-height: 350px; margin-bottom: 60px; }
 .calender-img { margin-bottom: 20px !important;}
-.custom-arrow { width: 45px; height: 45px; background: var(--theme-primary); border-radius: 50%; top: 85%; transform: translateY(-50%); opacity: 1; display: flex; align-items: center; justify-content: center; }
+.custom-arrow {
+    width: 46px;
+    height: 46px;
+    background: var(--theme-primary);
+    border-radius: 50%;
+    top: 85%;
+    transform: translateY(-50%);
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 0;
+}
 .carousel-control-prev { left: 30px; }
 .carousel-control-next { right: 30px; }
 .carousel-control-prev,
 .carousel-control-next { background: var(--theme-primary); transition: all 0.3s ease; }
 .carousel-control-prev.disabled,
-.carousel-control-next.disabled { background: var(--theme-gray3); border: 1px solid var(--theme-background); pointer-events: none; }
+.carousel-control-next.disabled { opacity: 0.5; pointer-events: none; }
 .carousel-control-prev.disabled svg path,
 .carousel-control-next.disabled svg path { fill: var(--theme-background); }
 .modamodal-pop-l-slide h5 { color: var(--theme-background); transition: all 0.4s ease; }
@@ -833,5 +845,10 @@ span.login-btn-link-text {line-height: 20px;}
       justify-content: center; */
     }
 .custom-indicators { position: absolute; bottom: 140px; left: 50%; transform: translateX(-50%); margin: 0; }
-.custom-indicators button { width: 6px; height: 6px; border-radius: 50%; background-color: #E3BDA6; border: none; margin: 0 3px; transition: 0.4s ease; }
-.custom-indicators button.active { width: 18px; border-radius: 20px; background-color: var(--theme-primary); }
+.custom-indicators button { width: 6px; height: 6px; border-radius: 50px; background-color: #E3BDA6; border: none; margin: 0 3px; transition: all 0.4s ease; -webkit-border-radius: 50px; -moz-border-radius: 50px; -ms-border-radius: 50px; -o-border-radius: 50px; -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -ms-transition: all 0.4s ease; -o-transition: all 0.4s ease; }
+.custom-indicators button.active { width: 18px; background-color: var(--theme-primary); }
+
+.custom-arrow:hover{
+    opacity: 1;
+    background-color: var(--hover-primary-btn);
+}
