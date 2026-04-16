@@ -784,6 +784,22 @@ Large devices
     .setup-startertag-main .option-checkbox {
         justify-content: center;
     }
+    /* popup css */
+    .modal-pop {
+        padding: 30px;
+    }
+    
+    .onboarding-screens-main {
+        min-height: 450px;
+    }
+    
+    .carousel-item img {
+        max-height: 250px;
+        margin-bottom: 40px;
+    }
+    
+    .skip-btn-main .skip-btn {top: 30px;font-size: 15px;}
+    
 }
 
 
@@ -939,7 +955,9 @@ Extra small devices (portrait phones, less than 576px)
 
     /* login screen */
     .code-input {
-        height: 44px;
+        height: 44px; }
+    .carousel-control-prev, .carousel-control-next {
+        display: none !important;
     }
 
 }

@@ -809,140 +809,29 @@ span.login-btn-link-text {line-height: 20px;}
 
 
 /* onboard-popup css */
-.modal-pop {
-    padding: 60px 30px;
-}
-.modal-dialog {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* chatgpt css */ 
-.skip-btn {
-    color: var(--theme-primary);
-    font-size: 14px;
-    text-decoration: none;
-  }
-  
-  .carousel-item img {
-    max-height: 475px;
-  }
-  
-  /* Arrows */
-  .custom-arrow {
-    width: 45px;
-    height: 45px;
-    background: var(--theme-primary);
-    border-radius: 50%;
-    top: 85%;
-    transform: translateY(-50%);
-    opacity: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* Position */
-  .carousel-control-prev {
-    left: 30px;
-  }
-  
-  .carousel-control-next {
-    right: 30px;
-  }
-  
-  /* Indicators */
-  .carousel-indicators .active {
-    background-color: var(--theme-primary);
-  }
-  
-  .carousel-indicators [data-bs-target] {
-    width: 6px;
-    height: 6px;
-    margin: 0 3px;
-    background-color: var(--theme-primary);
-    opacity: 0.5;
-    border-radius: 50%;
-  }
-  
-  /* Default buttons */
-  .carousel-control-prev,
-  .carousel-control-next {
-    background: var(--theme-primary);
-    transition: all 0.3s ease;
-  }
-  
-  /* Disabled buttons */
-  .carousel-control-prev.disabled,
-  .carousel-control-next.disabled {
-    background: var(--theme-gray3);
-    border: 1px solid var(--theme-background);
-    pointer-events: none;
-  }
-  
-  /* Disabled icon color */
-  .carousel-control-prev.disabled svg path,
-  .carousel-control-next.disabled svg path {
-    fill: var(--theme-background);
-  }
-  
-  .modamodal-pop-l-slide h5 {
-    color: var(--theme-background);
-    transition: all 0.4s ease;
-  }
-  
-  /* Last slide background */
-  .modal-pop-l-slide {
-    background: var(--theme-primary); 
-  }
-
-  .onboarding-screens-main{position: relative; overflow: hidden;}
-
-  .skip-btn-main .skip-btn {
-    position: absolute !important;
-    z-index: 5;
-    right: 30px;
-    top: 60px;
-    font-size: 18px;
-}
-
-.onboarding-screens-main .carousel-indicators {
-    position: absolute !important;
-}
-
-.carousel-inner.text-center {
-    display: flex;
-}
-
-.carousel-item .finish-text {
-    max-width: 550px;
-    margin: 0 auto;
-    color: var(--theme-background);
-    letter-spacing: 1px;
-}
-
-
-/* new slide css */
-.custom-indicators {
-    display: flex;
-    justify-content: center;
-    gap: 6px;
-    margin-bottom: 15px;
-  }
-  
-  .custom-indicators span {
-    width: 6px;
-    height: 6px;
-    background: #c4c4c4;
-    border-radius: 50%;
-    display: inline-block;
-    transition: all 0.3s ease;
-  }
-  
-  .custom-indicators span.active {
-    background: var(--theme-primary);
-    width: 18px;
-    border-radius: 10px;
-  }
+.modal-pop { padding: 60px 30px; }
+.modal-dialog { width: 100%; display: flex; align-items: center; justify-content: center; }
+.carousel-item img { max-height: 350px; margin-bottom: 60px; }
+.calender-img { margin-bottom: 20px !important;}
+.custom-arrow { width: 45px; height: 45px; background: var(--theme-primary); border-radius: 50%; top: 85%; transform: translateY(-50%); opacity: 1; display: flex; align-items: center; justify-content: center; }
+.carousel-control-prev { left: 30px; }
+.carousel-control-next { right: 30px; }
+.carousel-control-prev,
+.carousel-control-next { background: var(--theme-primary); transition: all 0.3s ease; }
+.carousel-control-prev.disabled,
+.carousel-control-next.disabled { background: var(--theme-gray3); border: 1px solid var(--theme-background); pointer-events: none; }
+.carousel-control-prev.disabled svg path,
+.carousel-control-next.disabled svg path { fill: var(--theme-background); }
+.modamodal-pop-l-slide h5 { color: var(--theme-background); transition: all 0.4s ease; }
+.modal-pop-l-slide { background: var(--theme-primary); }
+.skip-btn-main .skip-btn { position: absolute !important; color: var(--theme-primary); z-index: 5; right: 30px; top: 60px; font-size: 18px; }
+.carousel-item .finish-text { max-width: 750px; margin: 0 auto; color: var(--theme-background); letter-spacing: 1px; }
+.onboarding-screens-main { position: relative; overflow: hidden; min-height: 550px; }
+.carousel-item { min-height: 450px;    
+      /* display: flex;
+      flex-direction: column;
+      justify-content: center; */
+    }
+.custom-indicators { position: absolute; bottom: 140px; left: 50%; transform: translateX(-50%); margin: 0; }
+.custom-indicators button { width: 6px; height: 6px; border-radius: 50%; background-color: #E3BDA6; border: none; margin: 0 3px; transition: 0.4s ease; }
+.custom-indicators button.active { width: 18px; border-radius: 20px; background-color: var(--theme-primary); }
