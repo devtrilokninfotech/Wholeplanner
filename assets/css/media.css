@@ -960,7 +960,7 @@ Large devices
         padding: 60px 30px;
     }
     .skip-btn-main .skip-btn {
-        top: 24px;
+        top: 30px;
     }
     .wrap-content-slide {
         max-width: 100%;
@@ -1049,6 +1049,6 @@ Extra small devices (portrait phones, less than 576px)
         margin-top: 20px;
     }
     .custom-indicators {
-        top: calc(100% - 160px);
+        top: calc(100% - 173px);
     }
 }

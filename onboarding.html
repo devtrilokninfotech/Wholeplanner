@@ -129,8 +129,7 @@
                                                 </div>
                                             </div>
                                             <div class="login-form-btn-wrap logo-form-wid fixed-btn-wrap">
-                                                <button type="button" class="btn btn-outline m-1 me-lg-4"
-                                                    data-bs-toggle="modal" data-bs-target="#openpopup-slide"> Cancel Job
+                                                <button type="button" class="btn btn-outline m-1 me-lg-4"> Cancel Job
                                                 </button>
                                             </div>
                                         </form>
@@ -315,7 +314,14 @@
         });
     </script>
 
-
+<script>
+    $(document).ready(function(){
+    
+      var myModal = new bootstrap.Modal(document.getElementById('openpopup-slide'));
+      myModal.show();
+    
+    });
+    </script>
 
 </body>
 

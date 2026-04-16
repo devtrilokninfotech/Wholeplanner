@@ -834,7 +834,7 @@ span.login-btn-link-text {line-height: 20px;}
 .carousel-control-next.disabled svg path { fill: var(--theme-background); }
 .modamodal-pop-l-slide h5 { color: var(--theme-background); transition: all 0.4s ease; }
 .modal-pop-l-slide { background: var(--theme-primary); }
-.skip-btn-main .skip-btn { position: absolute !important; color: var(--theme-primary); z-index: 5; right: 30px; top: 60px; font-size: 18px; }
+.skip-btn-main .skip-btn { position: absolute !important; color: var(--theme-primary); z-index: 5; right: 30px; top: 40px; font-size: 18px; }
 .carousel-item .finish-text { max-width: 750px; margin: 0 auto; color: var(--theme-background); }
 .onboarding-screens-main { position: relative; overflow: hidden; min-height: 550px; }
 .carousel-item { min-height: 450px;    
