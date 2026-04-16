@@ -357,6 +357,25 @@ Large devices
     .login-sec-cu-btn.btn {
         font-size: 15px;
     }
+
+    /* popup modal css */
+    .modal-pop {
+        padding: 50px 30px;
+    }
+
+    .skip-btn-main .skip-btn {
+        font-size: 16px;
+        top: 30px;
+    }
+
+    .carousel-item img {
+        margin-bottom: 50px;
+    }
+    
+    .custom-indicators {
+        top: calc(100% - 140px);
+    }
+
 }
 
 
@@ -438,6 +457,10 @@ Large devices
         height: 110px;
     }
 
+    /* popup modal css */
+    .custom-indicators {
+        top: calc(100% - 130px);
+    }
 
 }
 
@@ -622,6 +645,13 @@ Large devices
     .starter-tag-wrap {
         padding: 80px 30px 0;
     }
+    .custom-arrow {
+        width: 38px;
+        height: 38px;
+    }
+    .custom-arrow svg {
+        width: 14px;
+    }
 }
 
 
@@ -785,9 +815,6 @@ Large devices
         justify-content: center;
     }
     /* popup css */
-    .modal-pop {
-        padding: 30px;
-    }
     
     .onboarding-screens-main {
         min-height: 450px;
@@ -798,7 +825,19 @@ Large devices
         margin-bottom: 40px;
     }
     
-    .skip-btn-main .skip-btn {top: 30px;font-size: 15px;}
+    .skip-btn-main .skip-btn {
+        font-size: 15px;
+    }
+    .custom-indicators {
+        top: calc(100% - 132px);
+    }
+    
+    .custom-arrow {
+        top: 80%;
+    }
+    .modal-dialog {
+        max-width: 600px;
+    }
     
 }
 
@@ -903,6 +942,34 @@ Large devices
         padding: 7px;
     }
 
+    .carousel-control-prev, .carousel-control-next {
+        display: none !important;
+    }
+    .custom-indicators {
+        top: calc(100% - 145px);
+    }
+    .carousel-item img {
+        max-height: 250px;
+        margin-bottom: 60px;
+    }
+
+    .onboarding-screens-main {
+        min-height: auto;
+    }
+    .modal-pop {
+        padding: 60px 30px;
+    }
+    .skip-btn-main .skip-btn {
+        top: 24px;
+    }
+    .wrap-content-slide {
+        max-width: 100%;
+    }
+    .modal-dialog {
+        max-width: 100%;
+        margin: 0 20px;
+    }
+
 }
 
 
@@ -955,11 +1022,33 @@ Extra small devices (portrait phones, less than 576px)
 
     /* login screen */
     .code-input {
-        height: 44px; }
-    .carousel-control-prev, .carousel-control-next {
-        display: none !important;
+        height: 44px; 
     }
+    .custom-indicators {
+        top: calc(100% - 140px);
+    }
+    
 
 }
 
-@media (max-width:399px) {}
+@media (max-width:399px) {
+    .modal-dialog {
+        margin: 0 16px;
+    }
+    .custom-indicators {
+        top: calc(100% - 160px);
+    }
+}
+
+@media (max-width:320px) {
+    .modal-pop {
+        padding: 50px 30px;
+    }
+    .carousel-item img {
+        margin-bottom: 60px;
+        margin-top: 20px;
+    }
+    .custom-indicators {
+        top: calc(100% - 160px);
+    }
+}

@@ -6347,7 +6347,7 @@ fieldset:disabled .btn {
 
     .modal-lg,
     .modal-xl {
-        --bs-modal-width: 1000px
+        --bs-modal-width: 800px
     }
 }
 
@@ -6355,7 +6355,6 @@ fieldset:disabled .btn {
     .modal-xl {
         --bs-modal-width: 1140px
     }
-}
 
 .modal-fullscreen {
     width: 100vw;
@@ -6378,6 +6377,8 @@ fieldset:disabled .btn {
 .modal-fullscreen .modal-body {
     overflow-y: auto
 }
+}
+
 
 @media (max-width:575.98px) {
     .modal-fullscreen-sm-down {

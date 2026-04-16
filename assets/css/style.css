@@ -802,7 +802,7 @@ span.login-btn-link-text {line-height: 20px;}
 
 /* onboard-popup css */
 .modal-pop { padding: 60px 30px; }
-.modal-dialog { width: 100%; display: flex; align-items: center; justify-content: center; }
+.modal-dialog { display: flex; align-items: center; justify-content: center; }
 .carousel-item img { max-height: 350px; margin-bottom: 60px; }
 .calender-img { margin-bottom: 20px !important;}
 .custom-arrow {
