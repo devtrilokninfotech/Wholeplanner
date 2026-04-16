@@ -149,7 +149,7 @@
     <!-- ====== /WRAPPER EOC ====== -->
 
     <!-- Open Slide Modal -->
-    <div class="modal modal-cm fade" id="openpopup-slide" tabindex="-1">
+    <div class="modal modal-cm fade onboarding-modal" id="openpopup-slide" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="onboarding-screens-main modal-content  border-0 br30">
 
@@ -248,57 +248,61 @@
 
 
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
+        document.addEventListener("DOMContentLoaded", () => {
+        const carouselEl = document.getElementById("introCarousel");
+        const carousel = new bootstrap.Carousel(carouselEl, { interval: false, wrap: false });
 
-            const carouselElement = document.getElementById('introCarousel');
-            const carousel = new bootstrap.Carousel(carouselElement, {
-                interval: false,
-                wrap: false
-            });
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+        const indicators = document.getElementById("customIndicators");
+        const indicatorBtns = indicators.querySelectorAll("button");
+        const items = Array.from(carouselEl.querySelectorAll(".carousel-item"));
+        const lastIndex = items.length - 1;
 
-            const prevBtn = document.getElementById('prevBtn');
-            const nextBtn = document.getElementById('nextBtn');
-            const indicators = document.getElementById('customIndicators');
-            const indicatorBtns = indicators.querySelectorAll('button');
+        let lockAfterLast = false;
 
-            function updateUI() {
-                const items = carouselElement.querySelectorAll('.carousel-item');
-                const activeItem = carouselElement.querySelector('.carousel-item.active');
+        const setHidden = (hide) => {
+            prevBtn.classList.toggle("d-none", hide);
+            nextBtn.classList.toggle("d-none", hide);
+            indicators.classList.toggle("d-none", hide);
+        };
 
-                const index = Array.from(items).indexOf(activeItem);
-                const lastIndex = items.length - 1;
+        const updateUI = (index) => {
+            prevBtn.classList.toggle("disabled", index === 0);
+            nextBtn.classList.toggle("disabled", index === lastIndex);
+            setHidden(index === lastIndex);
+            indicatorBtns.forEach((btn, i) => btn.classList.toggle("active", i === index));
+        };
 
-                // Disable buttons
-                prevBtn.classList.toggle('disabled', index === 0);
-                nextBtn.classList.toggle('disabled', index === lastIndex);
+        const isLastSlide = (index) => items[index]?.classList.contains("modal-pop-l-slide");
 
-                // Hide on last slide
-                if (index === lastIndex) {
-                    prevBtn.style.display = "none";
-                    nextBtn.style.display = "none";
-                    indicators.style.display = "none";
-                } else {
-                    prevBtn.style.display = "flex";
-                    nextBtn.style.display = "flex";
-                    indicators.style.display = "flex";
-                }
+        indicatorBtns.forEach((btn, i) => btn.addEventListener("click", () => carousel.to(i)));
 
-                // Update active indicator
-                indicatorBtns.forEach((btn, i) => {
-                    btn.classList.toggle('active', i === index);
-                });
+        // IMPORTANT: back navigation block after last slide
+        carouselEl.addEventListener("slide.bs.carousel", (e) => {
+            const goingToLast = isLastSlide(e.to);
+
+            if (lockAfterLast && !goingToLast) {
+            e.preventDefault(); // blocks prev/swipe/keyboard/indicator
+            return;
             }
 
-            // Click on indicators
-            indicatorBtns.forEach((btn, i) => {
-                btn.addEventListener('click', () => {
-                    carousel.to(i);
-                });
-            });
+            if (goingToLast) lockAfterLast = true;
 
-            updateUI();
-            carouselElement.addEventListener('slid.bs.carousel', updateUI);
+            updateUI(e.to);
+        });
 
+        carouselEl.addEventListener("slid.bs.carousel", (e) => updateUI(e.to));
+
+        updateUI(items.findIndex((el) => el.classList.contains("active")));
+
+        // modal close par reset (optional)
+        const modalEl = document.getElementById("openpopup-slide");
+        modalEl.addEventListener("hidden.bs.modal", () => {
+            lockAfterLast = false;
+            carousel.to(0);
+            updateUI(0);
+        });
         });
     </script>
 

@@ -829,7 +829,7 @@ span.login-btn-link-text {line-height: 20px;}
 .modamodal-pop-l-slide h5 { color: var(--theme-background); transition: all 0.4s ease; }
 .modal-pop-l-slide { background: var(--theme-primary); }
 .skip-btn-main .skip-btn { position: absolute !important; color: var(--theme-primary); z-index: 5; right: 30px; top: 60px; font-size: 18px; }
-.carousel-item .finish-text { max-width: 750px; margin: 0 auto; color: var(--theme-background); letter-spacing: 1px; }
+.carousel-item .finish-text { max-width: 750px; margin: 0 auto; color: var(--theme-background); }
 .onboarding-screens-main { position: relative; overflow: hidden; min-height: 550px; }
 .carousel-item { min-height: 450px;    
       /* display: flex;
@@ -854,4 +854,11 @@ span.login-btn-link-text {line-height: 20px;}
 .wrap-content-slide {
     max-width: calc(100% - 100px);
     margin: 0 auto;
+}
+.onboarding-modal.fade .modal-dialog{
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
 }
