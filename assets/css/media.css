@@ -69,49 +69,62 @@ Large devices
         font-size: 24px !important;
     }
 
-    .btn.btn-outline,
-    .btn.btn-black {
-        height: 42px;
+    .btn {
+        padding: 16px 16px;
+        font-size: 15px;
+        border-radius: 10px;
+        min-width: 170px;
     }
 
-    .btn.btn-gray,
-    .btn.btn-primary {
-        height: 45px;
-        font-size: 15px;
-        padding: 8px 12px;
+    .login-btn-link.btn.btn-outline,
+    .login-btn-link.btn.btn-black {
+        border-radius: 10px;
+    }
+
+    .btn.btn-black,
+    .btn.btn-outline {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
+    svg.login-btn-icon {
+        width: 18px;
+        height: 18px;
     }
 
     .login-btn-col.g-logo .login-btn-link-text,
     .login-btn-col.apple-logo .login-btn-link-text {
         font-size: 15px;
+        margin-bottom: 0px;
+        line-height: 18px;
     }
 
     .form-control.border {
-        height: 45px;
+        height: 49px;
         font-size: 15px;
         padding: 8px 12px;
+        border-radius: 10px;
     }
 
     .form-control.border::placeholder {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .form-control.border::-moz-placeholder {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .form-control.border:-ms-input-placeholder {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .form-control.border::-webkit-input-placeholder {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .form-control.border::-o-input-placeholder {
-        font-size: 13px;
+        font-size: 15px;
     }
-
 
     .custom-table-main th,
     .custom-table-main td {
@@ -157,12 +170,6 @@ Large devices
         margin-top: -2px;
     }
 
-    .btn {
-        font-size: 15px;
-        padding: 9px 14px 8px 14px;
-        min-width: 180px;
-    }
-
     .login-sec-cu-btn-wrap {
         padding-bottom: 80px;
     }
@@ -196,7 +203,6 @@ Large devices
 
     .login-form-forpass-link {
         font-size: 14px;
-        margin-bottom: 20px;
     }
 
     .ft-links a {
@@ -217,10 +223,6 @@ Large devices
         height: 120px;
     }
 
-    .btn-primary-hover {
-        font-size: 14px !important;
-    }
-
     .login-logo {
         margin-bottom: 60px;
     }
@@ -235,11 +237,6 @@ Large devices
 
     .login-form-btn-wrap.logo-form-wid .graytext {
         margin-bottom: 10px;
-    }
-
-    .login-btn-link.btn.btn-outline,
-    .login-btn-link.btn.btn-black {
-        border-radius: 10px;
     }
 
     /* Starter Tag Screen */
@@ -311,12 +308,33 @@ Large devices
     }
 
     .btn {
-        padding: 8px 10px 7px 10px;
+        padding: 14px 16px;
+        min-width: 150px;
     }
 
+    .btn.btn-black,
+    .btn.btn-outline {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .form-control.border {
+        height: 45px;
+    }
+
+    .login-btn-col.g-logo .login-btn-link-text,
+    .login-btn-col.apple-logo .login-btn-link-text {
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+    svg.login-btn-icon {
+        width: 16px;
+        height: 16px;
+        margin-bottom: 1px;
+    }
 
     /*=== Login ===*/
-
 
     .login-sec-cu-btn-wrap {
         padding-bottom: 65px;
@@ -335,20 +353,10 @@ Large devices
     }
 
     /* .login-sec-right-con{padding:20px 30px 0px;} */
-    .btn {
-        font-size: 14px;
-    }
 
     .login-sec-cu-btn.btn {
         font-size: 15px;
     }
-
-    .btn {
-        min-width: 170px;
-    }
-
-
-
 }
 
 
@@ -419,9 +427,6 @@ Large devices
     }
 
     /* .whole-logo{max-width:500px;} */
-    .btn {
-        min-width: 160px;
-    }
 
     .profile-preview {
         width: 110px;
@@ -516,10 +521,6 @@ Large devices
     }
 
     /* setup-starter-tag screen */
-    .option-checkbox {
-        gap: 6px 4px;
-    }
-
     .tag-item span {
         padding: 6px 10px;
         font-size: 12px;
@@ -588,27 +589,6 @@ Large devices
     .min-width-185 {
         min-width: 140px !important;
     }
-
-    .form-control.border::placeholder {
-        font-size: 14px;
-    }
-
-    .form-control.border::-moz-placeholder {
-        font-size: 14px;
-    }
-
-    .form-control.border:-ms-input-placeholder {
-        font-size: 14px;
-    }
-
-    .form-control.border::-webkit-input-placeholder {
-        font-size: 14px;
-    }
-
-    .form-control.border::-o-input-placeholder {
-        font-size: 14px;
-    }
-
 
     /*=== Login ===*/
 
@@ -767,11 +747,6 @@ Large devices
         height: auto;
     }
 
-    .btn {
-        border-radius: 10px;
-        min-width: 140px;
-    }
-
     .setacc-form-la label.form-label {
         font-size: 14px;
     }
@@ -800,6 +775,14 @@ Large devices
         padding: 50px 0 10px;
         max-width: 390px;
         /* flex-direction: column; */
+    }
+
+    .setup-startertag-main .form-group {
+        text-align: center;
+    }
+
+    .setup-startertag-main .option-checkbox {
+        justify-content: center;
     }
 }
 
@@ -840,47 +823,46 @@ Large devices
         font-size: 14px;
     }
 
-    .btn.btn-gray,
-    .btn.btn-primary {
-        height: 45px;
-        padding: 8px 12px;
+    .btn {
+        min-width: 110px;
+        padding: 12px 16px;
         font-size: 14px;
     }
 
     .form-control.border {
-        height: 45px;
-        padding: 8px 12px;
+        height: 40px;
         font-size: 13px;
     }
 
     .form-control.border::placeholder {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .form-control.border::-moz-placeholder {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .form-control.border:-ms-input-placeholder {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .form-control.border::-webkit-input-placeholder {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .form-control.border::-o-input-placeholder {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .login-btn-col.g-logo .login-btn-link-text,
     .login-btn-col.apple-logo .login-btn-link-text {
         font-size: 14px;
+        line-height: 15px;
     }
 
-
-    .btn {
-        min-width: 110px;
+    .login-btn-main .login-btn-col {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
     }
 
 
@@ -947,16 +929,17 @@ Extra small devices (portrait phones, less than 576px)
         font-size: 14px;
     }
 
-    .btn {
-        min-width: 105px;
-    }
-
     .offcanvas-btn-wrap .btn {
         margin: 2px;
     }
 
     .whole-logo {
         max-width: 140px;
+    }
+
+    /* login screen */
+    .code-input {
+        height: 44px;
     }
 
 }
