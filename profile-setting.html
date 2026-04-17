@@ -357,7 +357,70 @@
         </div>
     </div>
 
-
+    <div class="modal modal-cm fade common-modal" id="EditProfile" tabindex="-1" aria-labelledby="EditProfileModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content border-0 br20 p20">
+                <div class="modal-header-cm">
+                    <div class="modal-header p-0 rounded-0 border-0">
+                        <div class="modal-title fs-22 fw-bold cblack1" id="EditProfileModalLabel">
+                            Change Password
+                        </div>
+                        <p class="fs-18 fw-medium text_gray4 mb-0">Update your password to keep your account secure.</p>
+                    </div>
+                </div>
+                <form class="modal-form">
+                    <div class="modal-body">
+                       
+                        <div class="">
+                            <div class="form-group mb-2">
+                                <label for="pwd" class="form-label">Your password</label>
+                                <div class="password-icon">
+                                  <input type="password" class="form-control border" id="pwd" name="form-pass"
+                                    placeholder="Enter your password">
+                                  <i class="fa fa-regular fa-eye-slash toggle-password" toggle="#pwd"></i>
+                                </div>
+                              </div>
+                              <div class="text-end">
+                                <a href="forgot-password.html" class="login-form-forpass-link fw-bold">
+                                  Forgot password?
+                                </a>
+                              </div>
+                        </div>
+                        <div class="modal-note-wrap mb-2">
+                            <div class="form-group mb-3">
+                                <label for="form-pass" class="form-label">New Password</label>
+                                <div class="password-icon">
+                                    <input type="password" class="form-control border" id="pwd" name="form-pass"
+                                      placeholder="Create a new password">
+                                    <i class="fa fa-regular fa-eye-slash toggle-password" toggle="#pwd"></i>
+                                  </div>
+                              </div>
+                              <div class="form-group mb-3">
+                                <label for="con-pwd" class="form-label">Confirm New Password</label>
+                                <div class="password-icon">
+                                  <input type="password" class="form-control border" id="con-pwd" name="form-pass"
+                                    placeholder="Re-enter your new password">
+                                  <i class="fa fa-regular fa-eye-slash toggle-password" toggle="#con-pwd"></i>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer border-0 rounded-0 p-0">
+                        <div class="row w-100 gx-2">
+                            <div class="col-6">
+                                <button type="button" class="btn btn-secondary w-100"
+                                    data-bs-dismiss="modal">Cancel</button>
+                            </div>
+                            <div class="col-6">
+                                <button type="submit" class="btn btn-primary w-100">Update Profile</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
 
     <!-- ====== WRAPPER ====== -->
