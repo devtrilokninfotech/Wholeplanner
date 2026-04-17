@@ -268,6 +268,10 @@ hr {
     opacity: 1;
 }
 
+.border-0{
+    border: 0 !important;
+}
+
 
 .br5{border-radius:5px;}        
 .br10{border-radius:10px;}
@@ -578,6 +582,7 @@ input[type="number"] {
 .min-width-150{min-width:150px;}
 .min-width-185{min-width:185px !important;}
 
+.wh-90{width:90px !important; height: 90px !important;}
 
 
 .mx-100{max-width:100%!important;}
@@ -874,6 +879,109 @@ span.login-btn-link-text {line-height: 20px;}
 /*===============================================================================
     Profile Page
 =================================================================================*/
+.content-wrapper {
+    margin-left: 300px;
+    min-height: calc(100vh - 124px);
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 124px;
+    transition: margin-left .3s ease-in-out;
+    -webkit-transition: margin-left .3s ease-in-out;
+    -moz-transition: margin-left .3s ease-in-out;
+    -ms-transition: margin-left .3s ease-in-out;
+    -o-transition: margin-left .3s ease-in-out;
+}
+
 .cm-layout{
+    background-color: var(--theme-background);
+}
+
+.badge-text{
+    display: inline-block;
+    z-index: 1;
+    position: relative;
     background-color: var(--theme-body);
+    color: var(--theme-primary);
+    font-weight: 200;
+    line-height: 1.5;
+    padding: 5px 12px;
+    font-size: 12px;
+    margin-bottom: 7px;
+    margin-right: 6px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.badge-text:last-child{
+    margin-right: 0;
+}
+
+.custom-tags-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.avatar-lg{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--theme-primary-light);
+    color: var(--theme-primary);
+    font-weight: 600;
+    font-size: 18px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.avatar-lg span{
+    padding: 6px;
+}
+
+.p-user-info h2{
+    display: inline-flex;
+    align-items: center;
+}
+
+.profile-h-main .avatar-lg span{
+    font-size: 36px;
+}
+.edit-profile-btn button {
+    min-width: auto;
+    padding: 12px 20px;
+}
+.edit-profile-btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.profile-h-main {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Common Modal Styles */
+.common-modal .modal-header-cm .modal-header {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.common-modal .modal-body{
+    padding: 30px 0 20px;
 }

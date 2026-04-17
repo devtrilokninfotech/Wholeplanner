@@ -2,7 +2,7 @@
     transition: all .3s ease-in-out;
     padding: 30px 30px;
     min-height: 104px;
-    width: calc(100vw - 300px);
+    width: calc(100% - 300px);
     margin-left: auto;
     background-color: var(--theme-body);
     z-index: auto;
@@ -41,7 +41,7 @@
 .ha-dropdown-click .user-menu .h-userprofileicon {
     width: 44px;
     height: 44px;
-    border-radius: 100%;
+    border-radius: 50%;
     object-fit: cover;
     object-position: center;
     display: inline-flex;
@@ -53,6 +53,10 @@
     color: var(--theme-primary);
     font-weight: 600;
     font-size: 18px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .ha-dropdown-click .user-menu .h-userprofileicon span {

@@ -63,7 +63,7 @@
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
                                 <li>
-                                    <a class="dropdown-item" href="profile-settings.html">
+                                    <a class="dropdown-item" href="profile-setting.html">
                                         <span class="icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -99,118 +99,160 @@
                 <div class="content-wrapper-main">
                     <!-- Sidebar -->
                     <aside class="main-sidebar">
-                        <div class="main-logo-wrapper">
-                            <!-- Mobile view logo -->
-                            <div class="mobilelogomain d-block d-md-none">
-                                <div class="headera-logo-wrap sidebar-top-toggle">
+                        <div class="sidebar-space">
+                            <div class="main-logo-wrapper">
+                                <!-- Mobile view logo -->
+                                <div class="mobilelogomain d-block d-md-none">
+                                    <div class="headera-logo-wrap sidebar-top-toggle">
+                                        <a href="#" class="headera-mlogo">
+                                            <img src="assets/images/header-logo-m.png" alt="Image">
+                                        </a>
+                                    </div>
+                                    <a href="#" class="sidebar-icon sidebar-toggle sidebar-toggle-mob">
+                                        <img src="assets/images/menubar.svg" alt="menubar">
+                                    </a>
+                                </div>
+
+                                <!-- Desktop view logo -->
+                                <div class="headera-logo-wrap sidebar-top-toggle d-md-block d-none">
                                     <a href="#" class="headera-mlogo">
                                         <img src="assets/images/header-logo-m.png" alt="Image">
                                     </a>
+                                    <a href="#" class="headera-logo">
+                                        <img src="assets/images/header-logo-text.png" alt="Image">
+                                    </a>
+                                    <a href="#" class="sidebar-icon sidebar-toggle sidebar-toggle-desk">
+                                        <img src="assets/images/menubar.svg" alt="menubar">
+                                    </a>
                                 </div>
-                                <a href="#" class="sidebar-icon sidebar-toggle sidebar-toggle-mob">
-                                    <img src="assets/images/menubar.svg" alt="menubar">
-                                </a>
                             </div>
+                            <div class="sidebar sidebar-menu-main">
+                                <nav class="sidebar-menu">
+                                    <ul class="nav-sidebar flex-column">
+                                        <li class="sb-nav-item">
+                                            <a href="dashboard.html" class="sb-nav-link">
+                                                <svg class="sb-nav-icon" width="16" height="16" viewBox="0 0 16 16"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path class="i-fill"
+                                                        d="M6 6H1.33333C0.598 6 0 5.402 0 4.66667V3.33333C0 1.49533 1.49533 0 3.33333 0H6C6.73533 0 7.33333 0.598 7.33333 1.33333V4.66667C7.33333 5.402 6.73533 6 6 6ZM12.6667 16H10C9.26467 16 8.66667 15.402 8.66667 14.6667V11.3333C8.66667 10.598 9.26467 10 10 10H14.6667C15.402 10 16 10.598 16 11.3333V12.6667C16 14.5047 14.5047 16 12.6667 16ZM14.6667 8.66667H10C9.26467 8.66667 8.66667 8.06867 8.66667 7.33333V1.33333C8.66667 0.598 9.26467 0 10 0H12.6667C14.5047 0 16 1.49533 16 3.33333V7.33333C16 8.06867 15.402 8.66667 14.6667 8.66667ZM6 16H3.33333C1.49533 16 0 14.5047 0 12.6667V8.66667C0 7.93133 0.598 7.33333 1.33333 7.33333H6C6.73533 7.33333 7.33333 7.93133 7.33333 8.66667V14.6667C7.33333 15.402 6.73533 16 6 16Z"
+                                                        fill="#666666" />
+                                                    <path class="i-border"
+                                                        d="M6 0H3.33333C1.49533 0 0 1.49533 0 3.33333V4.66667C0 5.402 0.598 6 1.33333 6H6C6.73533 6 7.33333 5.402 7.33333 4.66667V1.33333C7.33333 0.598 6.73533 0 6 0ZM1.33333 4.66667V3.33333C1.33333 2.23067 2.23067 1.33333 3.33333 1.33333H6L6.00133 4.66667H1.33333ZM14.6667 10H10C9.26467 10 8.66667 10.598 8.66667 11.3333V14.6667C8.66667 15.402 9.26467 16 10 16H12.6667C14.5047 16 16 14.5047 16 12.6667V11.3333C16 10.598 15.402 10 14.6667 10ZM14.6667 12.6667C14.6667 13.7693 13.7693 14.6667 12.6667 14.6667H10V11.3333H14.6667V12.6667ZM12.6667 0H10C9.26467 0 8.66667 0.598 8.66667 1.33333V7.33333C8.66667 8.06867 9.26467 8.66667 10 8.66667H14.6667C15.402 8.66667 16 8.06867 16 7.33333V3.33333C16 1.49533 14.5047 0 12.6667 0ZM10 7.33333V1.33333H12.6667C13.7693 1.33333 14.6667 2.23067 14.6667 3.33333L14.668 7.33333H10ZM6 7.33333H1.33333C0.598 7.33333 0 7.93133 0 8.66667V12.6667C0 14.5047 1.49533 16 3.33333 16H6C6.73533 16 7.33333 15.402 7.33333 14.6667V8.66667C7.33333 7.93133 6.73533 7.33333 6 7.33333ZM3.33333 14.6667C2.23067 14.6667 1.33333 13.7693 1.33333 12.6667V8.66667H6L6.00133 14.6667H3.33333Z"
+                                                        fill="#666666" />
+                                                </svg>
 
-                            <!-- Desktop view logo -->
-                            <div class="headera-logo-wrap sidebar-top-toggle d-md-block d-none">
-                                <a href="#" class="headera-mlogo">
-                                    <img src="assets/images/header-logo-m.png" alt="Image">
-                                </a>
-                                <a href="#" class="headera-logo">
-                                    <img src="assets/images/header-logo-text.png" alt="Image">
-                                </a>
-                                <a href="#" class="sidebar-icon sidebar-toggle sidebar-toggle-desk">
-                                    <img src="assets/images/menubar.svg" alt="menubar">
-                                </a>
+                                                <p>Dashboard</p>
+                                            </a>
+                                        </li>
+                                        <li class="sb-nav-item">
+                                            <a href="groups.html" class="sb-nav-link">
+                                                <img class="sb-nav-icon" src="assets/images/sidebar/groups-icon.svg"
+                                                    alt="icon">
+                                                <p>Groups</p>
+                                            </a>
+                                        </li>
+                                        <li class="sb-nav-item">
+                                            <a href="#" class="sb-nav-link">
+                                                <img class="sb-nav-icon" src="assets/images/sidebar/notes-icon.svg"
+                                                    alt="icon">
+                                                <p>Notes</p>
+                                            </a>
+                                        </li>
+                                        <li class="sb-nav-item">
+                                            <a href="#" class="sb-nav-link">
+                                                <img class="sb-nav-icon" src="assets/images/sidebar/tasks-icon.svg"
+                                                    alt="icon">
+                                                <p>Tasks</p>
+                                            </a>
+                                        </li>
+                                        <li class="sb-nav-item">
+                                            <a href="#" class="sb-nav-link">
+                                                <img class="sb-nav-icon" src="assets/images/sidebar/calendar-icon.svg"
+                                                    alt="icon">
+                                                <p>Calendar</p>
+                                            </a>
+                                        </li>
+                                        <li class="sb-nav-item">
+                                            <a href="#" class="sb-nav-link">
+                                                <img class="sb-nav-icon"
+                                                    src="assets/images/sidebar/activity-history-icon.svg" alt="icon">
+                                                <p>Activity History</p>
+                                            </a>
+                                        </li>
+                                        <li class="sb-nav-item">
+                                            <a href="#" class="sb-nav-link">
+                                                <img class="sb-nav-icon" src="assets/images/sidebar/trash-icon.svg"
+                                                    alt="icon">
+                                                <p>Trash</p>
+                                            </a>
+                                        </li>
+                                        <li class="sb-nav-item">
+                                            <a href="#" class="sb-nav-link">
+                                                <img class="sb-nav-icon"
+                                                    src="assets/images/sidebar/notifications-icon.svg" alt="icon">
+                                                <p>Notifications</p>
+                                                <span class="countbadge">10</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
                             </div>
-                        </div>
-                        <div class="sidebar sidebar-menu-main">
-                            <nav class="sidebar-menu">
-                                <ul class="nav-sidebar flex-column">
-                                    <li class="sb-nav-item">
-                                        <a href="dashboard.html" class="sb-nav-link">
-                                            <svg class="sb-nav-icon" width="16" height="16" viewBox="0 0 16 16"
-                                                fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path class="i-fill"
-                                                    d="M6 6H1.33333C0.598 6 0 5.402 0 4.66667V3.33333C0 1.49533 1.49533 0 3.33333 0H6C6.73533 0 7.33333 0.598 7.33333 1.33333V4.66667C7.33333 5.402 6.73533 6 6 6ZM12.6667 16H10C9.26467 16 8.66667 15.402 8.66667 14.6667V11.3333C8.66667 10.598 9.26467 10 10 10H14.6667C15.402 10 16 10.598 16 11.3333V12.6667C16 14.5047 14.5047 16 12.6667 16ZM14.6667 8.66667H10C9.26467 8.66667 8.66667 8.06867 8.66667 7.33333V1.33333C8.66667 0.598 9.26467 0 10 0H12.6667C14.5047 0 16 1.49533 16 3.33333V7.33333C16 8.06867 15.402 8.66667 14.6667 8.66667ZM6 16H3.33333C1.49533 16 0 14.5047 0 12.6667V8.66667C0 7.93133 0.598 7.33333 1.33333 7.33333H6C6.73533 7.33333 7.33333 7.93133 7.33333 8.66667V14.6667C7.33333 15.402 6.73533 16 6 16Z"
-                                                    fill="#666666" />
-                                                <path class="i-border"
-                                                    d="M6 0H3.33333C1.49533 0 0 1.49533 0 3.33333V4.66667C0 5.402 0.598 6 1.33333 6H6C6.73533 6 7.33333 5.402 7.33333 4.66667V1.33333C7.33333 0.598 6.73533 0 6 0ZM1.33333 4.66667V3.33333C1.33333 2.23067 2.23067 1.33333 3.33333 1.33333H6L6.00133 4.66667H1.33333ZM14.6667 10H10C9.26467 10 8.66667 10.598 8.66667 11.3333V14.6667C8.66667 15.402 9.26467 16 10 16H12.6667C14.5047 16 16 14.5047 16 12.6667V11.3333C16 10.598 15.402 10 14.6667 10ZM14.6667 12.6667C14.6667 13.7693 13.7693 14.6667 12.6667 14.6667H10V11.3333H14.6667V12.6667ZM12.6667 0H10C9.26467 0 8.66667 0.598 8.66667 1.33333V7.33333C8.66667 8.06867 9.26467 8.66667 10 8.66667H14.6667C15.402 8.66667 16 8.06867 16 7.33333V3.33333C16 1.49533 14.5047 0 12.6667 0ZM10 7.33333V1.33333H12.6667C13.7693 1.33333 14.6667 2.23067 14.6667 3.33333L14.668 7.33333H10ZM6 7.33333H1.33333C0.598 7.33333 0 7.93133 0 8.66667V12.6667C0 14.5047 1.49533 16 3.33333 16H6C6.73533 16 7.33333 15.402 7.33333 14.6667V8.66667C7.33333 7.93133 6.73533 7.33333 6 7.33333ZM3.33333 14.6667C2.23067 14.6667 1.33333 13.7693 1.33333 12.6667V8.66667H6L6.00133 14.6667H3.33333Z"
-                                                    fill="#666666" />
-                                            </svg>
-
-                                            <p>Dashboard</p>
-                                        </a>
-                                    </li>
-                                    <li class="sb-nav-item">
-                                        <a href="groups.html" class="sb-nav-link">
-                                            <img class="sb-nav-icon" src="assets/images/sidebar/groups-icon.svg"
-                                                alt="icon">
-                                            <p>Groups</p>
-                                        </a>
-                                    </li>
-                                    <li class="sb-nav-item active">
-                                        <a href="#" class="sb-nav-link">
-                                            <img class="sb-nav-icon" src="assets/images/sidebar/notes-icon.svg"
-                                                alt="icon">
-                                            <p>Notes</p>
-                                        </a>
-                                    </li>
-                                    <li class="sb-nav-item">
-                                        <a href="#" class="sb-nav-link">
-                                            <img class="sb-nav-icon" src="assets/images/sidebar/tasks-icon.svg"
-                                                alt="icon">
-                                            <p>Tasks</p>
-                                        </a>
-                                    </li>
-                                    <li class="sb-nav-item">
-                                        <a href="#" class="sb-nav-link">
-                                            <img class="sb-nav-icon" src="assets/images/sidebar/calendar-icon.svg"
-                                                alt="icon">
-                                            <p>Calendar</p>
-                                        </a>
-                                    </li>
-                                    <li class="sb-nav-item">
-                                        <a href="#" class="sb-nav-link">
-                                            <img class="sb-nav-icon"
-                                                src="assets/images/sidebar/activity-history-icon.svg" alt="icon">
-                                            <p>Activity History</p>
-                                        </a>
-                                    </li>
-                                    <li class="sb-nav-item">
-                                        <a href="#" class="sb-nav-link">
-                                            <img class="sb-nav-icon" src="assets/images/sidebar/trash-icon.svg"
-                                                alt="icon">
-                                            <p>Trash</p>
-                                        </a>
-                                    </li>
-                                    <li class="sb-nav-item">
-                                        <a href="#" class="sb-nav-link">
-                                            <img class="sb-nav-icon" src="assets/images/sidebar/notifications-icon.svg"
-                                                alt="icon">
-                                            <p>Notifications</p>
-                                            <span class="countbadge">10</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
                         </div>
                     </aside>
                     <div class="content-wrapper">
                         <div class="content">
                             <div class="profile-page">
                                 <div class="profile-header p30 br16 cm-layout">
+                                    <!-- Profile Header Content -->
                                     <div class="profile-h-main">
+                                        <div class="p-user-menu d-flex align-items-center gap-sm-3 gap-2">
+                                            <div class="avatar-lg wh-90">
+                                                <span>ah</span>
+                                                <!-- <img src="assets/images/h-user-img.jpg" alt="#"> -->
+                                            </div>
+                                            <div class="p-user-info">
+                                                <h2 class="fs-22 mb-0">Andrew Hiddleston
+                                                    <small
+                                                        class="ms-2 mb-0 d-inline-block pr-badge badge-text text-uppercase text-white bg-primary fw-regular">
+                                                        Solo Business Owner
+                                                    </small>
+                                                </h2>
+                                                <span
+                                                    class="d-block text_gray1 fs-14">andrew.hiddleston@gmail.com</span>
+                                                <div class="custom-tags-wrap pt-2 mt-1">
+                                                    <span class="badge-text">#Learning</span>
+                                                    <span class="badge-text">#Finance</span>
+                                                    <span class="badge-text">#Maintenance</span>
+                                                    <button class="badge-text border-0">+5 More</button>
+                                                </div>
+                                            </div>
+                                        </div>
 
+                                        <!-- Edit Profile Button -->
+                                        <div class="edit-profile-btn">
+                                            <button class="btn btn-primary" data-bs-toggle="modal"
+                                                data-bs-target="#EditProfile">
+                                                <img src="assets/images/edit-icon.svg" alt="edit" class="me-2">
+                                                Edit Profile
+                                            </button>
+                                        </div>
                                     </div>
-                                    <button class="btn btn-primary">
-                                        <img src="assets/images/edit-icon.svg" alt="edit" class="me-1">
-                                        Edit Profile
-                                    </button>
+                                </div>
+                                <div class="row-wrapper">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="p20 br16 cm-layout">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="p20 br16 cm-layout">
+
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -218,6 +260,57 @@
         </section>
 
     </div>
+
+    <!-- Edit Profile Modal -->
+    <div class="modal modal-cm fade common-modal" id="EditProfile" tabindex="-1" aria-labelledby="EditProfileModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content border-0 br20 p20">
+                <div class="modal-header-cm">
+                    <div class="modal-header p-0 rounded-0 border-0">
+                        <div class="modal-title fs-22 fw-bold cblack1" id="EditProfileModalLabel">
+                            Edit Profile
+                        </div>
+                        <p class="fs-18 fw-medium text_gray4 mb-0">Update your information and manage your account.</p>
+                    </div>
+                </div>
+                <form class="modal-form">
+                    <div class="modal-body">
+                       
+                        <div class="form-group">
+                            <label for="form-rdj" class="form-label">Reason for Cancel Job</label>
+                            <textarea class="form-control border" id="form-canceljob" name="form-canceljob"
+                                placeholder="Write a clear reason (minimum 10 words)..."></textarea>
+                        </div>
+                        <div class="modal-note-wrap mb-2">
+                            <div class="modal-note-tl fs-14 fw-bold fst-italic cblack1 mb-1">
+                                Note:
+                            </div>
+                            <p class="fs-14 fst-italic cgray mb-0">
+                                This job has pending requests from Truck Operators. Deleting it will cancel all requests
+                                immediately.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer border-0 rounded-0 p-0">
+                        <div class="row w-100 gx-2">
+                            <div class="col-6">
+                                <button type="button" class="btn btn-secondary w-100"
+                                    data-bs-dismiss="modal">Cancel</button>
+                            </div>
+                            <div class="col-6">
+                                <button type="submit" class="btn btn-primary w-100">Update Profile</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
     <!-- ====== WRAPPER ====== -->
 
     <!-- =================== WEB JS ==================== -->
