@@ -196,10 +196,8 @@
 
 .main-sidebar .sb-nav-item .sb-nav-link .countbadge {
     position: absolute;
-    right: 4px;
+    right: 16px;
     z-index: 1;
-    transform: scale(0.7);
-    top: 6px;
 }
 
 .sidebar-show-hide .main-header nav.main-header {
@@ -319,7 +317,7 @@ body.sidebar-show-hide {
 
 
     .main-sidebar {
-        width: 65px;
+        width: 45px;
         z-index: 1030;
     }
 

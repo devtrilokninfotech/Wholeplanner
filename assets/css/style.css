@@ -594,7 +594,7 @@ input[type="number"] {
 .min-width-185{min-width:185px !important;}
 
 .wh-90{width:90px !important; height: 90px !important;}
-
+.wh-82{width: 82px !important;height: 82px !important;}
 
 .mx-100{max-width:100%!important;}
 .minw-auto{min-width:auto!important;}
@@ -965,6 +965,7 @@ span.login-btn-link-text {line-height: 20px;}
     color: var(--theme-primary);
     font-weight: 600;
     font-size: 18px;
+    flex-shrink: 0;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;

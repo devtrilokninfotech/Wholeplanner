@@ -380,7 +380,7 @@
     </div>
 
     <!-- Edit Profile Modal -->
-    <!-- <div class="modal modal-cm fade common-modal" id="EditProfile" tabindex="-1" aria-labelledby="EditProfileModalLabel"
+    <div class="modal modal-cm fade common-modal" id="EditProfile" tabindex="-1" aria-labelledby="EditProfileModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content border-0 br20 p20">
@@ -395,19 +395,83 @@
                 <form class="modal-form">
                     <div class="modal-body">
 
-                        <div class="form-group">
-                            <label for="form-rdj" class="form-label">Reason for Cancel Job</label>
-                            <textarea class="form-control border" id="form-canceljob" name="form-canceljob"
-                                placeholder="Write a clear reason (minimum 10 words)..."></textarea>
-                        </div>
-                        <div class="modal-note-wrap mb-2">
-                            <div class="modal-note-tl fs-14 fw-bold fst-italic cblack1 mb-1">
-                                Note:
+                        <div class="p-user-menu d-flex gap-sm-3 gap-2">
+                            <div class="avatar-lg wh-82">
+                                <span>ah</span>
+                                <!-- <img src="assets/images/h-user-img.jpg" alt="#"> -->
                             </div>
-                            <p class="fs-14 fst-italic cgray mb-0">
-                                This job has pending requests from Truck Operators. Deleting it will cancel all requests
-                                immediately.
-                            </p>
+                            <div class="logo-form-la">
+                                <div class="form-group mb-3 logo-form-la">
+                                  <label for="form-f-name" class="form-label">Full name</label>
+                                  <input type="text" class="form-control border" id="form-f-name" name="form-f-name"
+                                    placeholder="Your name">
+                                </div>
+                            </div>
+                        </div>
+                          <div class="logo-form-la">
+                            <div class="form-group">
+                              <label for="form-f-name" class="form-label">Profession / Occupation</label>
+                              <input type="text" class="form-control border" id="form-f-name" name="form-f-name"
+                                placeholder="Chief Executive Officer">
+                            </div>
+                          </div>
+                        <hr>
+                        <div class="form-group mb-0">
+                            <p class="set-form-title">Tags based on Small Business Owner.</p>
+
+                            <div class="option-checkbox">
+
+                                <label class="tag-item">
+                                    <input type="checkbox" value="meetings">
+                                    <span>#Meetings</span>
+                                </label>
+
+                                <label class="tag-item">
+                                    <input type="checkbox" value="clients">
+                                    <span>#Clients</span>
+                                </label>
+
+                                <label class="tag-item">
+                                    <input type="checkbox" value="invoices">
+                                    <span>#Invoices</span>
+                                </label>
+
+                                <label class="tag-item">
+                                    <input type="checkbox" value="inventory">
+                                    <span>#Inventory</span>
+                                </label>
+
+                                <label class="tag-item">
+                                    <input type="checkbox" value="urgent">
+                                    <span>#Urgent</span>
+                                </label>
+
+                                <label class="tag-item">
+                                    <input type="checkbox" value="home">
+                                    <span>#Home</span>
+                                </label>
+
+                                <label class="tag-item">
+                                    <input type="checkbox" value="work">
+                                    <span>#Work</span>
+                                </label>
+
+                                <label class="tag-item">
+                                    <input type="checkbox" value="personal">
+                                    <span>#Personal</span>
+                                </label>
+
+                                <label class="tag-item">
+                                    <input type="checkbox" value="family">
+                                    <span>#Family</span>
+                                </label>
+
+                                <label class="tag-item">
+                                    <input type="checkbox" value="Life">
+                                    <span>#Life</span>
+                                </label>
+
+                            </div>
                         </div>
                     </div>
                     <div class="modal-footer border-0 rounded-0 p-0">
@@ -424,16 +488,16 @@
                 </form>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <!-- Change Password Modal -->
-    <div class="modal modal-cm fade common-modal" id="EditProfile" tabindex="-1" aria-labelledby="EditProfileModalLabel"
+    <!-- <div class="modal modal-cm fade common-modal" id="ChangePassword" tabindex="-1" aria-labelledby="ChangePasswordModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content border-0 br20 p20">
                 <div class="modal-header-cm">
                     <div class="modal-header p-0 rounded-0 border-0">
-                        <div class="modal-title fs-22 fw-bold cblack1" id="EditProfileModalLabel">
+                        <div class="modal-title fs-22 fw-bold cblack1" id="ChangePasswordModalLabel">
                             Change Password
                         </div>
                         <p class="fs-18 fw-medium text_gray4 mb-0">Update your password to keep your account secure.</p>
@@ -484,14 +548,57 @@
                                     data-bs-dismiss="modal">Cancel</button>
                             </div>
                             <div class="col-6">
-                                <button type="submit" class="btn btn-primary w-100">Update Profile</button>
+                                <button type="submit" class="btn btn-primary w-100">Update Password</button>
                             </div>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
-    </div>
+    </div> -->
+
+    <!-- Share Feedback Modal -->
+    <!-- <div class="modal modal-cm fade common-modal" id="ShareFeedback" tabindex="-1" aria-labelledby="ShareFeedbackModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content border-0 br20 p20">
+                <div class="modal-header-cm">
+                    <div class="modal-header p-0 rounded-0 border-0">
+                        <div class="modal-title fs-22 fw-bold cblack1" id="ShareFeedbackModalLabel">
+                            Share Feedback
+                        </div>
+                        <p class="fs-18 fw-medium text_gray4 mb-0">Share your experience and help us improve</p>
+                    </div>
+                </div>
+                <form class="modal-form">
+                    <div class="modal-body">
+
+                        <div class="form-group mb-3">
+                            <label for="form-rdj" class="form-label">How was your experience using the Whole Planner?</label>
+                            <textarea class="form-control border" id="form-canceljob" name="form-canceljob"
+                                placeholder="Tell us what you liked or what didn’t work well..."></textarea>
+                        </div>
+                        <div class="form-group mb-0">
+                            <label for="form-rdj" class="form-label">What features would you like to see in the future?</label>
+                            <textarea class="form-control border" id="form-canceljob" name="form-canceljob"
+                                placeholder="Got an idea? Share it here..."></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer border-0 rounded-0 p-0">
+                        <div class="row w-100 gx-2">
+                            <div class="col-6">
+                                <button type="button" class="btn btn-secondary w-100"
+                                    data-bs-dismiss="modal">Cancel</button>
+                            </div>
+                            <div class="col-6">
+                                <button type="submit" class="btn btn-primary w-100">Submit Feedback</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div> -->
 
 
     <!-- ====== WRAPPER ====== -->
