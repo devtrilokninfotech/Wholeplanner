@@ -265,6 +265,14 @@ hr,.hr {
     border-top: 0;
     opacity: 1;
 }
+.hr_solid,.hr_solid {
+    border-bottom: 1px solid var(--theme-gray3);
+    margin-top: 14px;
+    margin-bottom: 14px;
+    width: 100%;
+    border-top: 0;
+    opacity: 1;
+}
 .border-0{
     border: 0 !important;
 }
@@ -630,7 +638,11 @@ input[type="number"] {
 
 
 .login-form-forpass-link-undderline {text-decoration: underline !important;}
-
+.popup-form-main-group {
+    border: 1px solid var(--theme-gray3);
+    border-radius: 15px;
+    padding: 20px;
+}
 
 /*===============================================================================
     Login

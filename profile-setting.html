@@ -398,12 +398,12 @@
                         <div class="p-user-menu d-flex gap-sm-3 gap-2">
                             <div class="avatar-lg wh-82">
                                 <span>ah</span>
-                                <!-- <img src="assets/images/h-user-img.jpg" alt="#"> -->
+                                <img src="assets/images/h-user-img.jpg" alt="#">
                             </div>
                             <div class="logo-form-la">
                                 <div class="form-group mb-3 logo-form-la">
                                   <label for="form-f-name" class="form-label">Full name</label>
-                                  <input type="text" class="form-control border" id="form-f-name" name="form-f-name"
+                                  <input type="text" class="form-control border w-100" id="form-f-name" name="form-f-name"
                                     placeholder="Your name">
                                 </div>
                             </div>
@@ -491,7 +491,7 @@
     </div>
 
     <!-- Change Password Modal -->
-    <!-- <div class="modal modal-cm fade common-modal" id="ChangePassword" tabindex="-1" aria-labelledby="ChangePasswordModalLabel"
+    <div class="modal modal-cm fade common-modal" id="ChangePassword" tabindex="-1" aria-labelledby="ChangePasswordModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content border-0 br20 p20">
@@ -555,10 +555,10 @@
                 </form>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <!-- Share Feedback Modal -->
-    <!-- <div class="modal modal-cm fade common-modal" id="ShareFeedback" tabindex="-1" aria-labelledby="ShareFeedbackModalLabel"
+    <div class="modal modal-cm fade common-modal" id="ShareFeedback" tabindex="-1" aria-labelledby="ShareFeedbackModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content border-0 br20 p20">
@@ -598,7 +598,120 @@
                 </form>
             </div>
         </div>
-    </div> -->
+    </div>
+
+    <!-- Contact Us Modal -->
+    <div class="modal modal-cm fade common-modal" id="ContactUs" tabindex="-1" aria-labelledby="ContactUsModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content border-0 br20 p20">
+                <div class="modal-header-cm">
+                    <div class="modal-header p-0 rounded-0 border-0">
+                        <div class="modal-title fs-22 fw-bold cblack1" id="ContactUsModalLabel">
+                            Contact Us
+                        </div>
+                        <p class="fs-18 fw-medium text_gray4 mb-0">Get in touch with our support team.</p>
+                    </div>
+                </div>
+                <form class="modal-form">
+                    <div class="modal-body">
+                        <div class="form-group popup-form-main-group mb-3">
+                            <div>
+                                <div class="icon-box-style mb-2">
+                                    <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.20835 14.3526L2.08836 14.6019C1.49466 14.7308 0.963237 15.0596 0.583069 15.5335C0.202901 16.0073 -0.00293245 16.5974 3.15695e-05 17.2049V17.7443C0.00054467 18.1096 0.12082 18.4648 0.342432 18.7552C0.564045 19.0457 0.874776 19.2556 1.22703 19.3526C2.30869 19.6476 4.36168 19.9999 8 19.9999C11.6383 19.9999 13.6913 19.6476 14.773 19.3526C15.1252 19.2556 15.436 19.0457 15.6576 18.7552C15.8792 18.4648 15.9995 18.1096 16 17.7443V17.2049C16.0029 16.5974 15.7971 16.0073 15.4169 15.5335C15.0368 15.0596 14.5053 14.7308 13.9116 14.6019L12.7916 14.3526L11.2637 13.4363L10.6493 12.003L10.8493 11.7726L10.9997 11.813C11.1569 11.8546 11.3189 11.8757 11.4817 11.876C11.9732 11.8749 12.4442 11.6789 12.7913 11.3309C13.1385 10.983 13.3334 10.5115 13.3333 10.02V9.61996C13.6188 9.54625 13.8718 9.37998 14.0527 9.14718C14.2337 8.91437 14.3324 8.62815 14.3333 8.3333V6.99997C14.3322 6.70524 14.2335 6.41917 14.0525 6.1865C13.8716 5.95383 13.6187 5.78766 13.3333 5.71398V5.33331C13.3333 3.91883 12.7714 2.56228 11.7712 1.56209C10.771 0.561901 9.41448 0 8 0C6.58552 0 5.22897 0.561901 4.22878 1.56209C3.22859 2.56228 2.66669 3.91883 2.66669 5.33331V5.71398C2.38131 5.78766 2.12838 5.95383 1.94746 6.1865C1.76653 6.41917 1.6678 6.70524 1.66669 6.99997V8.3333C1.66669 8.68692 1.80717 9.02606 2.05721 9.2761C2.30726 9.52615 2.6464 9.66663 3.00002 9.66663H3.66668C3.7805 9.66552 3.89326 9.64477 4.00002 9.6053V9.72029C3.99982 10.1962 4.17254 10.6559 4.48601 11.014L5.35268 12.0023L4.73801 13.4356L3.20835 14.3526ZM4.90534 14.1123C5.50826 14.9067 6.3338 15.5039 7.277 15.8279C6.95557 16.1427 6.68852 16.5085 6.48667 16.9106C5.43736 16.4208 4.52236 15.684 3.82002 14.7633L4.90534 14.1123ZM15.3333 17.2049V17.7443C15.3334 17.9638 15.2615 18.1772 15.1285 18.3519C14.9956 18.5265 14.8089 18.6527 14.5973 18.7109C13.555 18.9939 11.5643 19.3333 8 19.3333C4.43568 19.3333 2.44502 18.9939 1.40269 18.7093C1.19135 18.6511 1.00491 18.5252 0.871975 18.3509C0.739036 18.1766 0.666925 17.9635 0.666696 17.7443V17.2049C0.664411 16.7493 0.81882 16.3066 1.10405 15.9513C1.38927 15.5959 1.78798 15.3493 2.23336 15.2529L3.19135 15.0399C3.56702 15.5443 4.70601 16.9286 6.31867 17.5613C6.45665 17.6143 6.60961 17.613 6.74669 17.5577C6.88378 17.5024 6.99479 17.3972 7.05734 17.2633C7.276 16.8006 7.59862 16.3947 8 16.0773C8.4015 16.3946 8.72433 16.8004 8.94333 17.2629C8.99056 17.3636 9.06544 17.4487 9.15923 17.5083C9.25301 17.568 9.36183 17.5998 9.47299 17.5999C9.54465 17.6 9.61567 17.5866 9.68233 17.5603C11.2947 16.9269 12.4336 15.5433 12.8093 15.0389L13.7673 15.2519C14.2127 15.3485 14.6114 15.5952 14.8965 15.9508C15.1816 16.3064 15.3359 16.7492 15.3333 17.2049ZM9.51333 16.9106C9.31165 16.5084 9.04457 16.1426 8.723 15.8279C9.6662 15.5039 10.4917 14.9067 11.0947 14.1123L12.18 14.7633C11.4776 15.6839 10.5626 16.4207 9.51333 16.9106ZM12.2033 10.9616C11.9615 11.1457 11.6579 11.2293 11.356 11.195L11.514 11.0143C11.8274 10.6561 12.0001 10.1963 12 9.72029V9.6053C12.1067 9.64477 12.2195 9.66552 12.3333 9.66663H12.6666V10.02C12.6673 10.202 12.6258 10.3818 12.5454 10.5451C12.4651 10.7085 12.348 10.851 12.2033 10.9616ZM11.3333 5.66164C8.271 5.56964 7.647 4.21932 7.643 4.20965C7.61827 4.14774 7.57554 4.09468 7.52034 4.0573C7.46514 4.01992 7.4 3.99996 7.33334 3.99998C6.3635 4.00151 5.43051 4.37161 4.72335 5.03531C5.02168 3.38099 6.44934 1.99999 8 1.99999C8.88375 2.00096 9.73103 2.35246 10.3559 2.97737C10.9808 3.60228 11.3323 4.44956 11.3333 5.33331V5.66164ZM13.6666 6.99997V8.3333C13.6666 8.51011 13.5964 8.67968 13.4714 8.8047C13.3464 8.92973 13.1768 8.99996 13 8.99996H12.3333C12.2449 8.99996 12.1601 8.96485 12.0976 8.90233C12.0351 8.83982 12 8.75504 12 8.66663V6.66664C12 6.57823 12.0351 6.49345 12.0976 6.43094C12.1601 6.36843 12.2449 6.33331 12.3333 6.33331H13C13.1768 6.33331 13.3464 6.40355 13.4714 6.52857C13.5964 6.65359 13.6666 6.82316 13.6666 6.99997ZM8 0.666664C9.23727 0.667988 10.4235 1.16008 11.2984 2.03496C12.1732 2.90983 12.6653 4.09605 12.6666 5.33331V5.66664H12.3333C12.2195 5.66775 12.1067 5.6885 12 5.72798V5.33331C11.9988 4.2728 11.577 3.25606 10.8271 2.50616C10.0773 1.75627 9.06051 1.33448 8 1.33333C5.86901 1.33333 4.00002 3.35832 4.00002 5.66664V5.72798C3.89326 5.6885 3.7805 5.66775 3.66668 5.66664H3.33335V5.33331C3.33468 4.09605 3.82676 2.90983 4.70164 2.03496C5.57652 1.16008 6.76273 0.667988 8 0.666664ZM3.66668 8.99996H3.00002C2.82321 8.99996 2.65364 8.92973 2.52862 8.8047C2.40359 8.67968 2.33336 8.51011 2.33336 8.3333V6.99997C2.33336 6.82316 2.40359 6.65359 2.52862 6.52857C2.65364 6.40355 2.82321 6.33331 3.00002 6.33331H3.66668C3.75509 6.33331 3.83987 6.36843 3.90238 6.43094C3.9649 6.49345 4.00002 6.57823 4.00002 6.66664V8.66663C4.00002 8.75504 3.9649 8.83982 3.90238 8.90233C3.83987 8.96485 3.75509 8.99996 3.66668 8.99996ZM4.66668 9.72029V6.09998C4.94767 5.69333 5.31563 5.35431 5.74389 5.10749C6.17214 4.86068 6.64995 4.71225 7.14267 4.67298C7.45733 5.14931 8.49333 6.24464 11.3333 6.32597V9.72029C11.3334 10.0348 11.2192 10.3387 11.012 10.5753L10.622 11.021L9.68866 10.7716L9.69866 10.7303C9.71905 10.6451 9.72245 10.5567 9.70868 10.4702C9.6949 10.3837 9.66421 10.3008 9.61836 10.2262C9.57252 10.1515 9.51241 10.0867 9.44149 10.0353C9.37056 9.98386 9.2902 9.94695 9.205 9.92663L8.23267 9.69329C7.97461 9.6315 7.70258 9.67475 7.47641 9.81352C7.25024 9.9523 7.08847 10.1752 7.02667 10.4333C6.96488 10.6913 7.00812 10.9634 7.1469 11.1895C7.28568 11.4157 7.50861 11.5775 7.76667 11.6393L8.739 11.8726C8.79031 11.8849 8.84289 11.8912 8.89566 11.8913C9.0379 11.8914 9.17637 11.8455 9.29047 11.7606C9.40458 11.6757 9.48823 11.5562 9.52899 11.42L10.132 11.5813L9.63333 12.15C9.49143 12.3122 9.31648 12.4423 9.12021 12.5314C8.92394 12.6205 8.71088 12.6666 8.49533 12.6666H7.50467C7.28913 12.6665 7.07611 12.6203 6.87986 12.5312C6.6836 12.4421 6.50864 12.3121 6.36667 12.15L4.98868 10.575C4.78125 10.3385 4.66681 10.0348 4.66668 9.72029ZM9.05 10.5753L8.89533 11.2233L7.92267 10.99C7.87958 10.9803 7.83885 10.9621 7.80284 10.9366C7.76682 10.911 7.73625 10.8786 7.71288 10.8411C7.68952 10.8036 7.67383 10.7619 7.66673 10.7183C7.65963 10.6747 7.66126 10.6302 7.67153 10.5872C7.6818 10.5443 7.7005 10.5038 7.72654 10.4681C7.75259 10.4325 7.78545 10.4023 7.82324 10.3795C7.86103 10.3566 7.90298 10.3415 7.94665 10.335C7.99033 10.3285 8.03486 10.3308 8.07767 10.3416L9.05 10.5753ZM5.86401 12.5889C6.06858 12.8228 6.32082 13.0103 6.6038 13.1386C6.88677 13.267 7.19393 13.3334 7.50467 13.3333H8.49533C8.80606 13.3334 9.11322 13.267 9.39619 13.1386C9.67916 13.0102 9.9314 12.8228 10.136 12.5889L10.1627 12.5586L10.6217 13.6303C9.98924 14.5025 9.05458 15.1079 8 15.3283C6.94542 15.1079 6.01076 14.5025 5.37834 13.6303L5.83768 12.5586L5.86401 12.5889Z" fill="#C67C4E"/>
+                                    </svg>                                    
+                                </div>
+                               <div>
+                                <h4>General Enquiries</h4>
+                                <p>Have questions about our services, your account, or general info? We’re happy to help.</p>
+                               </div>
+                            </div>
+                            <div class="hr_solid"></div>
+                           <div>
+                            <p>Email:</p>
+                            <a href="#" class="text-primary">info@wholeplanner.com</a>
+                           </div>
+                        </div>
+                        <div class="form-group mb-0">
+                            
+                        </div>
+                    </div>
+                    <div class="modal-footer border-0 rounded-0 p-0">
+                        <div class="row w-100 gx-2">
+                            <div class="col-12">
+                                <button type="button" class="btn btn-secondary w-100"
+                                    data-bs-dismiss="modal">Cancel</button>
+                            </div>
+                            <!-- <div class="col-6">
+                                <button type="submit" class="btn btn-primary w-100">Update Profile</button>
+                            </div> -->
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Us Modal -->
+    <div class="modal modal-cm fade common-modal" id="ContactUs" tabindex="-1" aria-labelledby="ContactUsModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content border-0 br20 p20">
+                <div class="modal-header-cm mb-2">
+                    <div class="modal-header p-0 rounded-0 border-0">
+                        <div class="modal-title fs-22 fw-bold cblack1" id="ContactUsModalLabel">
+                            Delete Account
+                        </div>
+                        <p class="fs-18 fw-medium text_gray4">This action will permanently delete your account  and all associated data. This cannot be undone.</p>
+                    </div>
+                </div>
+                <form class="modal-form">
+                    <div class="modal-footer border-0 rounded-0 p-0">
+                        <div class="row w-100">
+                            <div class="col-6">
+                                <button type="button" class="btn btn-secondary w-100"
+                                    data-bs-dismiss="modal">Don’t Delete Account</button>
+                            </div>
+                            <div class="col-6">
+                                <button type="submit" class="btn btn-primary w-100">Yes, Delete Account</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign Out Modal -->
+    <div class="modal modal-cm fade common-modal" id="SignOut" tabindex="-1" aria-labelledby="SignOutModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content border-0 br20 p20">
+                <div class="modal-header-cm mb-2">
+                    <div class="modal-header p-0 rounded-0 border-0">
+                        <div class="modal-title fs-22 fw-bold cblack1" id="SignOutModalLabel">
+                            Sign Out
+                        </div>
+                        <p class="fs-18 fw-medium text_gray4">Are you sure you want to sign out of your account?</p>
+                    </div>
+                </div>
+                <form class="modal-form">
+                    <div class="modal-footer border-0 rounded-0 p-0">
+                        <div class="row w-100">
+                            <div class="col-6">
+                                <button type="button" class="btn btn-secondary w-100"
+                                    data-bs-dismiss="modal">No, Keep It</button>
+                            </div>
+                            <div class="col-6">
+                                <button type="submit" class="btn btn-primary w-100">Yes, Sign Out!</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
 
     <!-- ====== WRAPPER ====== -->
