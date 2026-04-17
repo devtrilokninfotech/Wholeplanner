@@ -380,7 +380,7 @@
     </div>
 
     <!-- Edit Profile Modal -->
-    <div class="modal modal-cm fade common-modal" id="EditProfile" tabindex="-1" aria-labelledby="EditProfileModalLabel"
+    <!-- <div class="modal modal-cm fade common-modal" id="EditProfile" tabindex="-1" aria-labelledby="EditProfileModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content border-0 br20 p20">
@@ -424,8 +424,9 @@
                 </form>
             </div>
         </div>
-    </div>
+    </div> -->
 
+    <!-- Change Password Modal -->
     <div class="modal modal-cm fade common-modal" id="EditProfile" tabindex="-1" aria-labelledby="EditProfileModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -443,19 +444,20 @@
                        
                         <div class="">
                             <div class="form-group mb-2">
-                                <label for="pwd" class="form-label">Your password</label>
+                                <label for="pwd" class="form-label">Current Password</label>
                                 <div class="password-icon">
-                                  <input type="password" class="form-control border" id="pwd" name="form-pass"
-                                    placeholder="Enter your password">
-                                  <i class="fa fa-regular fa-eye-slash toggle-password" toggle="#pwd"></i>
+                                  <input type="password" class="form-control border" id="cu-pwd" name="form-pass"
+                                    placeholder="Enter Current Password">
+                                  <i class="fa fa-regular fa-eye-slash toggle-password" toggle="#cu-pwd"></i>
                                 </div>
                               </div>
                               <div class="text-end">
-                                <a href="forgot-password.html" class="login-form-forpass-link fw-bold">
-                                  Forgot password?
+                                <a href="forgot-password.html" class="login-form-forpass-link login-form-forpass-link-undderline fw-bold mb-0">
+                                    Forgot Password?
                                 </a>
                               </div>
                         </div>
+                        <hr>
                         <div class="modal-note-wrap mb-2">
                             <div class="form-group mb-3">
                                 <label for="form-pass" class="form-label">New Password</label>
