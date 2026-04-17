@@ -20,6 +20,8 @@ body {
     --theme-black: #000000;
     --theme-primary:#C67C4E;
     --theme-primary-light: #FBEDE5;
+    --LightBrown: #FBEDE5;
+
     --theme-text-color: #161212;
 
     --theme-secondary-btn: #E4E4E4;
@@ -37,6 +39,8 @@ body {
     --theme-title: #242424;
     --theme-black1: #121212;
     --theme-icon: #666666;
+    --sec-title: #A1A1AA;
+    --sub-text: #64748B;
 }
 
 *,
@@ -185,9 +189,12 @@ html {
 .theme_color { color: var(--theme-text-color) !important; }
 .text_icon { color: var(--theme-icon) !important; }
 .text_red { color: var(--theme-red) !important; }
+.sec_title_color { color: var(--sec-title) !important; }
+.sub_text_color { color: var(--sub-text) !important; }
 
 .bg-primary { background-color: var(--theme-primary) !important; }
 .bg-primary-light { background-color: var(--theme-primary-light) !important; }
+.bg-light-brown { background-color: var(--LightBrown) !important; }
 .bg_title { background-color: var(--theme-title) !important; }
 .bg_gray1 { background-color: var(--theme-gray1) !important; }
 .bg_gray2 { background-color: var(--theme-gray2) !important; }
@@ -250,7 +257,7 @@ img { margin-bottom:0; }
     opacity: 1;
 }
 
-hr {
+hr,.hr {
     border-bottom: 1px dashed var(--theme-gray3);
     margin-top: 14px;
     margin-bottom: 14px;
@@ -258,16 +265,6 @@ hr {
     border-top: 0;
     opacity: 1;
 }
-
-.hr {
-    border-bottom: 1px dashed var(--theme-gray3);
-    margin-top: 14px;
-    margin-bottom: 14px;
-    width: 100%;
-    border-top: 0;
-    opacity: 1;
-}
-
 .border-0{
     border: 0 !important;
 }
@@ -538,6 +535,7 @@ input[type="number"] {
     text-decoration: underline;
     text-underline-offset: 3px;
 }
+.letter-spacing-01{letter-spacing:0.1px;}
 
 
 /* Spacing Classes */
@@ -548,7 +546,20 @@ input[type="number"] {
 .p30{
     padding: 30px;
 }
-
+.mt20{
+    margin-top: 20px;
+}
+.mb20{
+    margin-bottom: 20px;
+}
+.mtmb20{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.mtmb16{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
 
 
 /* Custom Width Classes */
@@ -924,7 +935,21 @@ span.login-btn-link-text {line-height: 20px;}
     flex-wrap: wrap;
     align-items: center;
 }
-
+.icon-box-style{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--LightBrown);
+    padding: 4px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
 .avatar-lg{
     width: 44px;
     height: 44px;
@@ -947,6 +972,27 @@ span.login-btn-link-text {line-height: 20px;}
 }
 .avatar-lg span{
     padding: 6px;
+}
+
+.outside-sec-title{
+    color: var(--sec-title);
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+}
+
+.minidot{
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    background-color: var(--theme-icon);
+    margin: 0 4px;
 }
 
 .p-user-info h2{
@@ -975,6 +1021,27 @@ span.login-btn-link-text {line-height: 20px;}
     position: relative;
     overflow: hidden;
 }
+.manage-btn .btn{
+    padding: 8px 20px;
+    margin: 4px 0;
+    min-width: auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.greadient-brown{
+    background: linear-gradient(150deg, #9D4300 0%, #C67C4E 100%);
+    box-shadow: 
+    0px 3.67px 5.5px -3.67px rgba(157, 67, 0, 0.2),
+    0px 9.17px 13.75px -2.75px rgba(157, 67, 0, 0.2);
+}
+.premium-plan-info {
+    display: flex;
+    align-items: center;
+}
+
 
 /* Common Modal Styles */
 .common-modal .modal-header-cm .modal-header {
