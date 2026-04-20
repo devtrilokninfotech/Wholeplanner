@@ -267,16 +267,16 @@ img { margin-bottom:0; }
 
 hr,.hr {
     border-bottom: 1px dashed var(--theme-gray3);
-    margin-top: 14px;
-    margin-bottom: 14px;
+    margin-top: 16px;
+    margin-bottom: 16px;
     width: 100%;
     border-top: 0;
     opacity: 1;
 }
 .hr_solid,.hr_solid {
     border-bottom: 1px solid var(--theme-gray3);
-    margin-top: 14px;
-    margin-bottom: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     width: 100%;
     border-top: 0;
     opacity: 1;
@@ -571,6 +571,22 @@ input[type="number"] {
 .mtmb24{
     margin-top: 24px;
     margin-bottom: 24px;
+.mb_10{
+    margin-bottom: 10px;
+}
+.mt_10{
+    margin-top: 10px;
+}
+.mtb_10{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.mb_30{
+    margin-bottom: 30px;
+}
+.mtmb20{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .mtmb16{
     margin-top: 16px;
@@ -1106,5 +1122,8 @@ span.login-btn-link-text {line-height: 20px;}
     align-items: flex-start;
 }
 .common-modal .modal-body{
-    padding: 30px 0 20px;
+    padding: 30px 0 30px;
 }
+
+/* pop-up css */
+.profile-user-p {margin-bottom: 14px;}

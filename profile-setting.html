@@ -375,7 +375,7 @@
 
                                                 <button
                                                     class="settings-item d-flex justify-content-between align-items-center border-0 bg_white w-100"
-                                                    data-bs-toggle="modal" data-bs-target="#">
+                                                    data-bs-toggle="modal" data-bs-target="#ContactUs">
                                                     <div class="premium-plan-info">
                                                         <div class="icon-box-style me-lg-3 me-2">
                                                             <img src="assets/images/edit-profile/contact-us-icon.svg" alt="icon">
@@ -441,7 +441,7 @@
                                                 <hr class="mtmb16">
 
                                                 <button class="settings-item d-flex justify-content-between align-items-center border-0 bg_white w-100"
-                                                    data-bs-toggle="modal" data-bs-target="#">
+                                                    data-bs-toggle="modal" data-bs-target="#DeleteAccount">
                                                     <div class="premium-plan-info">
                                                         <div class="icon-box-style me-lg-3 me-2 dele-icon">
                                                             <img src="assets/images/edit-profile/delet-icon.svg" alt="icon">
@@ -461,7 +461,7 @@
                                                 <hr class="mtmb16">
 
                                                 <button class="settings-item d-flex justify-content-between align-items-center border-0 bg_white w-100"
-                                                    data-bs-toggle="modal" data-bs-target="#">
+                                                    data-bs-toggle="modal" data-bs-target="#SignOut">
                                                     <div class="premium-plan-info">
                                                         <div class="icon-box-style me-lg-3 me-2">
                                                             <img src="assets/images/edit-profile/sign-out-icon.svg" alt="icon">
@@ -496,7 +496,7 @@
     <div class="modal modal-cm fade common-modal" id="EditProfile" tabindex="-1" aria-labelledby="EditProfileModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content border-0 br20 p20">
+            <div class="modal-content border-0 br20 p30">
                 <div class="modal-header-cm">
                     <div class="modal-header p-0 rounded-0 border-0">
                         <div class="modal-title fs-22 fw-bold cblack1" id="EditProfileModalLabel">
@@ -508,21 +508,21 @@
                 <form class="modal-form">
                     <div class="modal-body">
 
-                        <div class="p-user-menu d-flex gap-sm-3 gap-2">
+                        <div class="profile-user-p d-flex gap-sm-3 gap-2 mb_14">
                             <div class="avatar-lg wh-82">
                                 <span>ah</span>
                                 <!-- <img src="assets/images/h-user-img.jpg" alt="#"> -->
                             </div>
-                            <div class="logo-form-la">
-                                <div class="form-group mb-3 logo-form-la">
+                            <div class="logo-form-la w-100">
+                                <div class="form-group mb-0 logo-form-la">
                                     <label for="form-f-name" class="form-label">Full name</label>
-                                    <input type="text" class="form-control border w-100" id="form-f-name"
+                                    <input type="text" class="form-control border" id="form-f-name"
                                         name="form-f-name" placeholder="Your name">
                                 </div>
                             </div>
                         </div>
                         <div class="logo-form-la">
-                            <div class="form-group">
+                            <div class="form-group mb-0">
                                 <label for="form-f-name" class="form-label">Profession / Occupation</label>
                                 <input type="text" class="form-control border" id="form-f-name" name="form-f-name"
                                     placeholder="Chief Executive Officer">
@@ -587,8 +587,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer border-0 rounded-0 p-0">
-                        <div class="row w-100 gx-2">
+                    <div class="border-0 rounded-0 p-0">
+                        <div class="row gx-2">
                             <div class="col-6">
                                 <button type="button" class="btn btn-secondary w-100"
                                     data-bs-dismiss="modal">Cancel</button>
@@ -604,10 +604,10 @@
     </div>
 
     <!-- Change Password Modal -->
-    <div class="modal modal-cm fade common-modal" id="ChangePassword" tabindex="-1"
-        aria-labelledby="ChangePasswordModalLabel" aria-hidden="true">
+    <div class="modal modal-cm fade common-modal" id="ChangePassword" tabindex="-1" aria-labelledby="ChangePasswordModalLabel" 
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content border-0 br20 p20">
+            <div class="modal-content border-0 br20 p30">
                 <div class="modal-header-cm">
                     <div class="modal-header p-0 rounded-0 border-0">
                         <div class="modal-title fs-22 fw-bold cblack1" id="ChangePasswordModalLabel">
@@ -636,7 +636,7 @@
                             </div>
                         </div>
                         <hr>
-                        <div class="modal-note-wrap mb-2">
+                        <div class="modal-note-wrap">
                             <div class="form-group mb-3">
                                 <label for="form-pass" class="form-label">New Password</label>
                                 <div class="password-icon">
@@ -645,7 +645,7 @@
                                     <i class="fa fa-regular fa-eye-slash toggle-password" toggle="#pwd"></i>
                                 </div>
                             </div>
-                            <div class="form-group mb-3">
+                            <div class="form-group mb-0">
                                 <label for="con-pwd" class="form-label">Confirm New Password</label>
                                 <div class="password-icon">
                                     <input type="password" class="form-control border" id="con-pwd" name="form-pass"
@@ -655,8 +655,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer border-0 rounded-0 p-0">
-                        <div class="row w-100 gx-2">
+                    <div class="border-0 rounded-0 p-0">
+                        <div class="row gx-2">
                             <div class="col-6">
                                 <button type="button" class="btn btn-secondary w-100"
                                     data-bs-dismiss="modal">Cancel</button>
@@ -672,10 +672,10 @@
     </div>
 
     <!-- Share Feedback Modal -->
-    <div class="modal modal-cm fade common-modal" id="ShareFeedback" tabindex="-1"
-        aria-labelledby="ShareFeedbackModalLabel" aria-hidden="true">
+    <div class="modal modal-cm fade common-modal" id="ShareFeedback" tabindex="-1" aria-labelledby="ShareFeedbackModalLabel" 
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content border-0 br20 p20">
+            <div class="modal-content border-0 br20 p30">
                 <div class="modal-header-cm">
                     <div class="modal-header p-0 rounded-0 border-0">
                         <div class="modal-title fs-22 fw-bold cblack1" id="ShareFeedbackModalLabel">
@@ -700,8 +700,8 @@
                                 placeholder="Got an idea? Share it here..."></textarea>
                         </div>
                     </div>
-                    <div class="modal-footer border-0 rounded-0 p-0">
-                        <div class="row w-100 gx-2">
+                    <div class="border-0 rounded-0 p-0">
+                        <div class="row gx-2">
                             <div class="col-6">
                                 <button type="button" class="btn btn-secondary w-100"
                                     data-bs-dismiss="modal">Cancel</button>
@@ -720,7 +720,7 @@
     <div class="modal modal-cm fade common-modal" id="ContactUs" tabindex="-1" aria-labelledby="ContactUsModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content border-0 br20 p20">
+            <div class="modal-content border-0 br20 p30">
                 <div class="modal-header-cm">
                     <div class="modal-header p-0 rounded-0 border-0">
                         <div class="modal-title fs-22 fw-bold cblack1" id="ContactUsModalLabel">
@@ -732,8 +732,8 @@
                 <form class="modal-form">
                     <div class="modal-body">
                         <div class="form-group popup-form-main-group mb-3">
-                            <div>
-                                <div class="icon-box-style mb-2">
+                            <div class="">
+                                <div class="icon-box-style mb_10">
                                     <svg width="16" height="20" viewBox="0 0 16 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -741,55 +741,71 @@
                                             fill="#C67C4E" />
                                     </svg>
                                 </div>
-                                <div>
-                                    <h4>General Enquiries</h4>
-                                    <p>Have questions about our services, your account, or general info? We’re happy to
+                                <div class="">
+                                    <h6 class="h6 fw-bold mb-0">General Enquiries</h6>
+                                    <p class="fs-14">Have questions about our services, your account, or general info? We’re happy to
                                         help.</p>
                                 </div>
                             </div>
                             <div class="hr_solid"></div>
                             <div>
-                                <p>Email:</p>
-                                <a href="#" class="text-primary">info@wholeplanner.com</a>
+                                <p class="mb-0 fs-14">Email:</p>
+                                <a href="#" class="text-primary text_underline fs-18">info@wholeplanner.com
+                                    <img src="assets/images/edit-profile/upright-arrow.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="form-group popup-form-main-group mb-0">
+                            <div class="">
+                                <div class="icon-box-style bottum-group mb_10">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.0350159 1.46829L1.1013 3.33415C1.11911 3.36535 1.14304 3.39262 1.17166 3.41433C1.20028 3.43604 1.233 3.45173 1.26784 3.46047L2.26263 3.70918L5.67448 7.121L6.05148 6.74412L2.58621 3.27899C2.55212 3.2448 2.50936 3.22054 2.46252 3.20881L1.5067 2.969L0.598881 1.37947L1.37718 0.60114L2.96736 1.50986L3.20728 2.46568C3.21894 2.51258 3.24316 2.55542 3.27735 2.58959L6.74262 6.05486L7.11947 5.67786L3.70765 2.26601L3.45894 1.27179C3.45021 1.2369 3.43452 1.20413 3.41281 1.17545C3.39111 1.14677 3.36383 1.12278 3.33262 1.1049L1.46664 0.0387343C1.41598 0.00993089 1.35727 -0.00147297 1.2995 0.00626869C1.24173 0.0140104 1.1881 0.0404709 1.1468 0.0815989L0.0806596 1.14788C0.0389528 1.18888 0.0118893 1.24246 0.00364098 1.30036C-0.00460734 1.35826 0.00641747 1.41727 0.0350159 1.46829ZM11.1171 5.25506L5.25296 11.1193L4.87597 10.7423L10.7402 4.8782L11.1171 5.25506ZM4.22663 11.3267C4.20294 11.2873 4.16944 11.2547 4.12939 11.232C4.08934 11.2093 4.04411 11.1974 3.9981 11.1975H2.3988C2.35281 11.1975 2.3076 11.2094 2.26758 11.232C2.22755 11.2547 2.19408 11.2873 2.17042 11.3267L1.3707 12.6595C1.34579 12.7009 1.33262 12.7484 1.33262 12.7967C1.33262 12.8451 1.34579 12.8926 1.3707 12.934L2.17042 14.2668C2.1941 14.3062 2.22758 14.3388 2.2676 14.3615C2.30762 14.3841 2.35282 14.396 2.3988 14.396H3.9981C4.0441 14.396 4.08932 14.3841 4.12936 14.3615C4.16939 14.3388 4.20289 14.3062 4.2266 14.2668L5.02621 12.934C5.05112 12.8926 5.06428 12.8451 5.06428 12.7967C5.06428 12.7484 5.05112 12.7009 5.02621 12.6595L4.22663 11.3267ZM3.84733 13.8629H2.54969L1.90997 12.7968L2.54971 11.7305H3.84733L4.48704 12.7968L3.84733 13.8629Z" fill="#C67C4E"/>
+                                        <path d="M12.7945 6.3978C14.555 6.40372 15.9871 4.98133 15.993 3.22082C15.9939 2.95288 15.961 2.68589 15.8951 2.42618C15.8596 2.2833 15.7149 2.19633 15.572 2.23187C15.5252 2.2436 15.4824 2.26781 15.4481 2.30193L13.7889 3.9601L12.4724 3.52137L12.0333 2.20523L13.6926 0.545635C13.726 0.512209 13.7499 0.4705 13.7619 0.424784C13.7739 0.379067 13.7735 0.330986 13.7608 0.285469C13.7481 0.239952 13.7235 0.198636 13.6895 0.165755C13.6556 0.132874 13.6135 0.109611 13.5676 0.0983495C11.8603 -0.334002 10.1259 0.699465 9.69356 2.40664C9.62787 2.66564 9.59508 2.93189 9.59595 3.19909C9.59663 3.40898 9.61821 3.61819 9.66077 3.82367L3.82318 9.66121C3.6177 9.61882 3.4085 9.59711 3.19871 9.59639C1.43208 9.59639 0 11.0284 0 12.7951C0 14.5616 1.43208 15.9937 3.19871 15.9937C4.96522 15.9937 6.39727 14.5616 6.39727 12.7951C6.39661 12.5853 6.3749 12.376 6.33246 12.1705L7.73001 10.773L8.3412 11.3842C8.3912 11.4342 8.459 11.4622 8.5297 11.4622C8.60039 11.4622 8.66819 11.4342 8.7182 11.3842L8.85142 11.2508C8.96831 11.1347 9.15723 11.1347 9.27412 11.2508C9.39089 11.3673 9.39112 11.5563 9.27468 11.6731L9.27412 11.6737L9.14089 11.8069C9.03683 11.9109 9.03683 12.0797 9.14089 12.1838L12.3206 15.3635C13.1569 16.2075 14.519 16.2136 15.363 15.3773C16.2069 14.541 16.2131 13.1787 15.3768 12.3348C15.3723 12.3302 15.3677 12.3256 15.363 12.321L12.1834 9.14141C12.0793 9.03735 11.9105 9.03735 11.8065 9.14141L11.6732 9.27464C11.5562 9.39088 11.3674 9.39088 11.2504 9.27464C11.1337 9.1582 11.1334 8.96917 11.2499 8.85248C11.2501 8.85228 11.2503 8.85217 11.2504 8.85192L11.3838 8.71858C11.4878 8.61454 11.4878 8.44578 11.3838 8.34172L10.7726 7.73053L12.1701 6.33298C12.3756 6.37543 12.5848 6.39715 12.7946 6.39782L12.7945 6.3978ZM13.8418 15.4606C13.6482 15.4603 13.4562 15.4253 13.2749 15.3572L15.3567 13.2753C15.6708 14.111 15.2481 15.0431 14.4125 15.3572C14.23 15.4258 14.0367 15.4608 13.8418 15.4606ZM10.8221 8.53286C10.5269 8.88495 10.5732 9.40975 10.9253 9.70483C11.2347 9.96415 11.6857 9.96393 11.9948 9.70404L14.9862 12.698C15.0186 12.7306 15.049 12.7649 15.0784 12.7998L12.7993 15.0788C12.764 15.0496 12.7301 15.0188 12.6975 14.9866L9.70386 11.9927C9.99905 11.6406 9.95277 11.1158 9.60067 10.8208C9.29124 10.5613 8.84011 10.5617 8.53102 10.8214L8.10456 10.395L10.3956 8.10738L10.8221 8.53286ZM11.8985 5.85195L5.85163 11.8976C5.81904 11.9301 5.79542 11.9705 5.78309 12.0149C5.77075 12.0593 5.77011 12.1061 5.78122 12.1508C6.14691 13.587 5.27912 15.0477 3.84288 15.4133C2.40676 15.7789 0.946082 14.9111 0.580371 13.4749C0.2148 12.0388 1.08256 10.5781 2.51882 10.2124C2.95326 10.1019 3.40845 10.1019 3.84288 10.2124C3.88759 10.2233 3.93435 10.2226 3.9787 10.2103C4.02305 10.198 4.06349 10.1745 4.09617 10.1421L10.1416 4.09641C10.1741 4.06386 10.1977 4.02342 10.21 3.97905C10.2223 3.93467 10.2228 3.88787 10.2116 3.84321C9.84845 2.42388 10.7046 0.978857 12.124 0.615588C12.3922 0.546991 12.6696 0.520792 12.9459 0.537944L11.5399 1.94459C11.5048 1.97955 11.4803 2.02357 11.4689 2.07171C11.4575 2.11986 11.4597 2.17022 11.4754 2.21716L12.0084 3.81657C12.0216 3.85581 12.0436 3.89145 12.0729 3.92068C12.1022 3.94991 12.1379 3.97193 12.1772 3.985L13.7766 4.51812C13.8235 4.53375 13.8738 4.53602 13.922 4.52467C13.9701 4.51333 14.0141 4.48881 14.0491 4.45387L15.4552 3.04778C15.4584 3.09816 15.46 3.14862 15.4601 3.19909C15.4675 4.66376 14.2863 5.85709 12.8217 5.86467C12.5953 5.86577 12.3696 5.83792 12.1503 5.78177C12.1056 5.7706 12.0588 5.77118 12.0144 5.78346C11.97 5.79573 11.9296 5.81929 11.897 5.85184H11.8984L11.8985 5.85195Z" fill="#C67C4E"/>
+                                        <path d="M13.7826 13.4076L13.4056 13.7846L10.7402 11.1192L11.1171 10.7422L13.7826 13.4076Z" fill="#C67C4E"/>
+                                        </svg>
+                                </div>
+                                <div class="">
+                                    <h6 class="h6 fw-bold mb-0">Technical Support</h6>
+                                    <p class="fs-14">Facing a bug or technical issue? Contact our support team for quick assistance.</p>
+                                </div>
+                            </div>
+                            <div class="hr_solid"></div>
+                            <div>
+                                <p class="mb-0 fs-14">Email:</p>
+                                <a href="#" class="text-primary text_underline fs-18">Support@wholeplanner.com
+                                    <img src="assets/images/edit-profile/upright-arrow.svg" alt="">
+                                </a>
                             </div>
                         </div>
                         <div class="form-group mb-0">
 
                         </div>
                     </div>
-                    <div class="modal-footer border-0 rounded-0 p-0">
-                        <div class="row w-100 gx-2">
-                            <div class="col-12">
-                                <button type="button" class="btn btn-secondary w-100"
-                                    data-bs-dismiss="modal">Cancel</button>
-                            </div>
-                            <!-- <div class="col-6">
-                                <button type="submit" class="btn btn-primary w-100">Update Profile</button>
-                            </div> -->
-                        </div>
+                    <div class="border-0 rounded-0 p-0">
+                        <button type="button" class="btn btn-secondary w-100" data-bs-dismiss="modal">Cancel</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 
-    <!-- Contact Us Modal -->
-    <div class="modal modal-cm fade common-modal" id="ContactUs" tabindex="-1" aria-labelledby="ContactUsModalLabel"
+    <!-- Delete Account Modal -->
+    <div class="modal modal-cm fade common-modal" id="DeleteAccount" tabindex="-1" aria-labelledby="DeleteAccountModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content border-0 br20 p20">
-                <div class="modal-header-cm mb-2">
+            <div class="modal-content border-0 br20 p30">
+                <div class="modal-header-cm mb_30">
                     <div class="modal-header p-0 rounded-0 border-0">
                         <div class="modal-title fs-22 fw-bold cblack1" id="ContactUsModalLabel">
                             Delete Account
                         </div>
-                        <p class="fs-18 fw-medium text_gray4">This action will permanently delete your account and all
+                        <p class="fs-18 fw-medium text_gray4 mb-0">This action will permanently delete your account and all
                             associated data. This cannot be undone.</p>
                     </div>
                 </div>
                 <form class="modal-form">
-                    <div class="modal-footer border-0 rounded-0 p-0">
-                        <div class="row w-100">
+                    <div class="border-0 rounded-0 p-0">
+                        <div class="row gx-2">
                             <div class="col-6">
                                 <button type="button" class="btn btn-secondary w-100" data-bs-dismiss="modal">Don’t
                                     Delete Account</button>
@@ -808,18 +824,18 @@
     <div class="modal modal-cm fade common-modal" id="SignOut" tabindex="-1" aria-labelledby="SignOutModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content border-0 br20 p20">
-                <div class="modal-header-cm mb-2">
+            <div class="modal-content border-0 br20 p30">
+                <div class="modal-header-cm mb_30">
                     <div class="modal-header p-0 rounded-0 border-0">
                         <div class="modal-title fs-22 fw-bold cblack1" id="SignOutModalLabel">
                             Sign Out
                         </div>
-                        <p class="fs-18 fw-medium text_gray4">Are you sure you want to sign out of your account?</p>
+                        <p class="fs-18 fw-medium text_gray4 mb-0">Are you sure you want to sign out of your account?</p>
                     </div>
                 </div>
                 <form class="modal-form">
-                    <div class="modal-footer border-0 rounded-0 p-0">
-                        <div class="row w-100">
+                    <div class="border-0 rounded-0 p-0">
+                        <div class="row gx-2">
                             <div class="col-6">
                                 <button type="button" class="btn btn-secondary w-100" data-bs-dismiss="modal">No, Keep
                                     It</button>
