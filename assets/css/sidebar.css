@@ -454,6 +454,7 @@ body.sidebar-show-hide {
     }
 
     .main-sidebar .sb-nav-item .sb-nav-link .countbadge {
+        align-items: start;
         outline: 3px solid #fff;
         transform-origin: 130px -80px;
         transform: scale(0.9);
@@ -461,6 +462,10 @@ body.sidebar-show-hide {
         -moz-transform: scale(0.9);
         -ms-transform: scale(0.9);
         -o-transform: scale(0.9);
+    }
+
+    .main-sidebar li.sb-nav-item .sb-nav-link:hover .countbadge {
+        outline: none;
     }
 
     .sidebar-show-hide .main-sidebar .sb-nav-item .sb-nav-link {
@@ -474,7 +479,7 @@ body.sidebar-show-hide {
     .main-sidebar .sb-nav-item .sb-nav-link {
         justify-content: center;
         min-width: auto;
-        padding: 10px 10px;
+        padding: 12px 12px;
         border-radius: 8px;
         -webkit-border-radius: 8px;
         -moz-border-radius: 8px;
