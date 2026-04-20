@@ -7,6 +7,7 @@
     transition: margin-left .3s ease-in-out, width .3s ease-in-out;
     width: 300px;
     background: #fff;
+    z-index: 99;
 }
 
 .main-logo-wrapper {

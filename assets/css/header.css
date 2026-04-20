@@ -5,7 +5,7 @@
     width: calc(100% - 300px);
     margin-left: auto;
     background-color: var(--theme-body);
-    z-index: auto;
+    z-index: 99;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out;
@@ -544,7 +544,7 @@
     }
 
     .mobilelogomain .sidebar-top-toggle {
-        z-index: 999;
+        /* z-index: 999; */
         position: fixed;
         top: 23px;
         left: 10px;

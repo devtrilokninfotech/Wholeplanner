@@ -929,7 +929,7 @@ Large devices
     }
 
     .p-user-info {
-        padding-right: 0;
+        padding-right: 45px;
     }
 
     .p-user-info .badge-text {
@@ -939,16 +939,24 @@ Large devices
     .p-user-info h2 {
         gap: 4px 10px;
         flex-wrap: wrap;
-        margin-bottom: 8px !important;
+        /* margin-bottom: 8px !important; */
     }
 
     .p-user-menu {
-        flex-direction: column;
         align-items: start !important;
     }
 
     .edit-profile-btn {
         top: 20px;
+    }
+
+    .profile-h-main .avatar-lg span {
+        font-size: 22px;
+    }
+
+    .wh-90 {
+        width: 60px !important;
+        height: 60px !important;
     }
 
     /* end */
@@ -1162,8 +1170,8 @@ Extra small devices (portrait phones, less than 576px)
     }
 
     .wh-90 {
-        width: 60px !important;
-        height: 60px !important;
+        width: 50px !important;
+        height: 50px !important;
     }
 
     .p30 {
@@ -1194,7 +1202,7 @@ Extra small devices (portrait phones, less than 576px)
     }
 
     .profile-h-main .avatar-lg span {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .settings-item.for-premium {
@@ -1213,12 +1221,26 @@ Extra small devices (portrait phones, less than 576px)
     }
 
     .mtmb16 {
-        margin-top: 12px;
-        margin-bottom: 12px;
+        margin-top: 14px;
+        margin-bottom: 14px;
     }
 
     .manage-btn .btn {
         margin-bottom: 0;
+    }
+
+    .p-user-menu {
+        flex-direction: column;
+    }
+
+    .p-user-info {
+        padding-right: 0;
+    }
+
+    .p-user-info h2 {
+        margin-bottom: 8px !important;
+        flex-direction: column;
+        align-items: start;
     }
 
     /* end */
