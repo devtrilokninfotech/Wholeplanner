@@ -549,6 +549,7 @@ Large devices
 
     .badge-text {
         padding: 5px 10px;
+        font-weight: 400;
     }
 
     .icon-box-style {
@@ -558,10 +559,6 @@ Large devices
 
     .arrow_icon img {
         height: 14px;
-    }
-
-    .premium-plan-info .sub_text_color {
-        letter-spacing: 0.2px;
     }
 
     /* end */
