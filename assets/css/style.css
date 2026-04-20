@@ -485,7 +485,7 @@ label.form-label {font-size: 14px;color: var(--theme-title);margin-bottom: 10px;
 .form-control.border:-ms-input-placeholder{color:var(--theme-gray1);font-weight:300;font-size:16px;}
 .form-control.border::-webkit-input-placeholder{color:var(--theme-gray1);font-weight:300;font-size:16px;}
 .form-control.border::-o-input-placeholder{color:var(--theme-gray1);font-weight:300;font-size:16px;}
-textarea.form-control.border{height:90px;}
+textarea.form-control.border{height: 108px;}
 
 input::-webkit-autofill,
 input::-webkit-autofill:hover,
@@ -571,6 +571,7 @@ input[type="number"] {
 .mtmb24{
     margin-top: 24px;
     margin-bottom: 24px;
+}
 .mb_10{
     margin-bottom: 10px;
 }
