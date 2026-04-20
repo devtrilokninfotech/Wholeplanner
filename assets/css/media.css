@@ -3,9 +3,7 @@ Large devices
 ===========================================================*/
 @media(max-width:1899px) {}
 
-@media(max-width:1799px) {
-  
-}
+@media(max-width:1799px) {}
 
 @media(max-width:1699px) {
     .w-240 {
@@ -154,6 +152,54 @@ Large devices
         min-width: 130px;
     }
 
+    .wh-90 {
+        width: 80px !important;
+        height: 80px !important;
+    }
+
+    .p30 {
+        padding: 20px;
+    }
+
+    .p20 {
+        padding: 16px;
+    }
+
+    .br16 {
+        border-radius: 14px;
+        -webkit-border-radius: 14px;
+        -moz-border-radius: 14px;
+        -ms-border-radius: 14px;
+        -o-border-radius: 14px;
+    }
+
+    .br12 {
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+
+    .icon-box-style {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+
+    .wh-44 {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .outside-sec-title {
+        font-size: 14px;
+    }
+
     .offcanvas-btn.btn {
         font-size: 14px;
         padding: 11px 20px;
@@ -248,6 +294,35 @@ Large devices
     .option-checkbox {
         gap: 8px 6px;
     }
+
+    /* Profile-Page */
+    .badge-text {
+        font-size: 10px;
+        line-height: 1.3;
+    }
+
+    .profile-h-main .avatar-lg span {
+        font-size: 30px;
+    }
+
+    .edit-profile-btn button {
+        padding: 12px 16px;
+    }
+
+    .manage-btn .btn {
+        padding: 8px 16px;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+    }
+
+    .p-user-info {
+        padding-right: 140px;
+    }
+
+    /* end */
 }
 
 
@@ -281,11 +356,6 @@ Large devices
     h6,
     .h6 {
         font-size: 14px;
-    }
-
-
-    .fs-14 {
-        font-size: 13px !important;
     }
 
     .fs-16 {
@@ -436,6 +506,11 @@ Large devices
         font-size: 22px !important;
     }
 
+    .wh-90 {
+        width: 75px !important;
+        height: 75px !important;
+    }
+
     /*=== Login ===*/
 
     .logo-form-wid {
@@ -457,6 +532,39 @@ Large devices
         width: 110px;
         height: 110px;
     }
+
+    /* Profile Page */
+    .edit-profile-btn button {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+
+    .manage-btn .btn {
+        padding: 8px 14px;
+    }
+
+    .profile-h-main .avatar-lg span {
+        font-size: 26px;
+    }
+
+    .badge-text {
+        padding: 5px 10px;
+    }
+
+    .icon-box-style {
+        width: 38px;
+        height: 38px;
+    }
+
+    .arrow_icon img {
+        height: 14px;
+    }
+
+    .premium-plan-info .sub_text_color {
+        letter-spacing: 0.2px;
+    }
+
+    /* end */
 
     /* popup modal css */
     .custom-indicators {
@@ -496,11 +604,6 @@ Large devices
     h6,
     .h6 {
         font-size: 14px;
-    }
-
-
-    .fs-14 {
-        font-size: 12px !important;
     }
 
     .fs-16 {
@@ -585,11 +688,6 @@ Large devices
         font-size: 14px;
     }
 
-
-    .fs-14 {
-        font-size: 12px !important;
-    }
-
     .fs-16 {
         font-size: 13px !important;
     }
@@ -612,6 +710,18 @@ Large devices
 
     .min-width-185 {
         min-width: 140px !important;
+    }
+
+    .outside-sec-title {
+        font-size: 12px;
+    }
+
+    .br16 {
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
     }
 
     /*=== Login ===*/
@@ -655,6 +765,14 @@ Large devices
     .custom-arrow svg {
         width: 14px;
     }
+
+    /* Profile Page */
+
+    .manage-btn .btn {
+        padding: 6px 10px;
+    }
+
+    /* end */
 }
 
 
@@ -691,31 +809,6 @@ Large devices
     h6,
     .h6 {
         font-size: 14px;
-    }
-
-
-    .fs-14 {
-        font-size: 12px !important;
-    }
-
-    .fs-16 {
-        font-size: 13px !important;
-    }
-
-    .fs-18 {
-        font-size: 14px !important;
-    }
-
-    .fs-20 {
-        font-size: 15px !important;
-    }
-
-    .fs-22 {
-        font-size: 17px !important;
-    }
-
-    .fs-26 {
-        font-size: 19px !important;
     }
 
     /*=== Login ===*/
@@ -818,6 +911,47 @@ Large devices
         justify-content: center;
     }
 
+    /* Profile Page */
+    .edit-profile-btn button {
+        font-size: 0;
+        padding: 8px 10px;
+        border-radius: 8px;
+    }
+
+    .edit-profile-btn button img {
+        margin-right: 0 !important;
+    }
+
+    .icon-box-style {
+        width: 36px;
+        height: 36px;
+        border-radius: 8px;
+    }
+
+    .p-user-info {
+        padding-right: 0;
+    }
+
+    .p-user-info .badge-text {
+        margin-left: 0 !important;
+    }
+
+    .p-user-info h2 {
+        gap: 4px 10px;
+        flex-wrap: wrap;
+        margin-bottom: 8px !important;
+    }
+
+    .p-user-menu {
+        flex-direction: column;
+        align-items: start !important;
+    }
+
+    .edit-profile-btn {
+        top: 20px;
+    }
+
+    /* end */
     /* popup css */
 
     .onboarding-screens-main {
@@ -926,6 +1060,8 @@ Large devices
         padding-left: 0 !important;
     }
 
+    /* Profile Page */
+
 
     /*=== Login ===*/
 
@@ -1025,6 +1161,15 @@ Extra small devices (portrait phones, less than 576px)
         font-size: 14px;
     }
 
+    .wh-90 {
+        width: 60px !important;
+        height: 60px !important;
+    }
+
+    .p30 {
+        padding: 16px;
+    }
+
     .offcanvas-btn-wrap .btn {
         margin: 2px;
     }
@@ -1032,6 +1177,51 @@ Extra small devices (portrait phones, less than 576px)
     .whole-logo {
         max-width: 140px;
     }
+
+    /* Profile Page */
+    .s-middle-text .minidot {
+        display: none;
+    }
+
+    .s-middle-text .expired_pre {
+        flex-direction: column;
+        align-items: start !important;
+        gap: 4px;
+    }
+
+    .premium-plan-info {
+        align-items: start;
+    }
+
+    .profile-h-main .avatar-lg span {
+        font-size: 22px;
+    }
+
+    .settings-item.for-premium {
+        gap: 10px;
+        flex-direction: column;
+        align-items: start !important;
+    }
+
+    .icon-box-style {
+        width: 32px;
+        height: 32px;
+    }
+
+    .icon-box-style img {
+        padding: 2px;
+    }
+
+    .mtmb16 {
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+    .manage-btn .btn {
+        margin-bottom: 0;
+    }
+
+    /* end */
 
     /* login screen */
     .code-input {
@@ -1049,7 +1239,7 @@ Extra small devices (portrait phones, less than 576px)
     .custom-indicators {
         top: calc(100% - 148px);
     }
-    
+
 }
 
 
@@ -1061,6 +1251,7 @@ Extra small devices (portrait phones, less than 576px)
     .custom-indicators {
         top: calc(100% - 160px);
     }
+
     .carousel-item img {
         margin-bottom: 50px;
     }

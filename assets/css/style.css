@@ -7,9 +7,10 @@ html {
 
 body {
     background-color: var(--theme-body);
-    font-family: 'SF Pro Display', sans-serif;
+    font-family: 'SFProDisplay', sans-serif;
     font-weight: 400;
     font-size: 14px;
+    letter-spacing: 0.2px;
     line-height: normal;
     color: var(--theme-text-color);
     text-transform: none;
@@ -173,6 +174,13 @@ html {
 .fw-semibold{font-weight:600 !important;}
 .fw-bold{font-weight:700 !important;}
 
+.fw-200{font-weight:200 !important;}
+.fw-300{font-weight:300 !important;}
+.fw-400{font-weight:400 !important;}
+.fw-500{font-weight:500 !important;}
+.fw-600{font-weight:600 !important;}
+.fw-700{font-weight:700 !important;}
+
 
 /* Font Color Style CSS  */
 
@@ -221,7 +229,7 @@ h3,.h3,
 h4,.h4,
 h5,.h5,
 h6,.h6 {
-    font-family: 'SF Pro Display', sans-serif;
+    font-family: 'SFProDisplay', sans-serif;
     line-height: 1.2;
     font-weight: bold;
     color: var(--theme-title);
@@ -236,7 +244,7 @@ h6,.h6 { font-size:16px; }
 
 p {
     line-height: 1.5;
-    font-family: 'SF Pro Display', sans-serif;
+    font-family: 'SFProDisplay', sans-serif;
     font-size: 16px;
     font-weight: normal;
     color: var(--theme-gray1);
@@ -302,8 +310,8 @@ hr,.hr {
     color: var(--theme-background);
     line-height: 1;
     font-size: 16px;
-    font-weight: 500;
-    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 400;
+    font-family: 'SFProDisplay', sans-serif;
     text-transform: capitalize;
     box-shadow: none;
     min-width: 185px;
@@ -466,17 +474,17 @@ label.form-label {font-size: 14px;color: var(--theme-title);margin-bottom: 10px;
 
 .form-group{margin-bottom:30px;position:relative;}
 .form-control[disabled] {opacity: 0.5; }
-.form-control.border {background-color:#fff;border: 1px solid #D8DADC !important;border-radius: 12px;box-shadow: none;-webkit-box-shadow: none;-moz-box-shadow: none;font-size: 16px;color:var(--theme-title);-webkit-appearance: none;font-family: 'SF Pro Display', sans-serif;font-weight: normal;padding:18px 16px;height: 56px;} 
+.form-control.border {background-color:#fff;border: 1px solid #D8DADC !important;border-radius: 12px;box-shadow: none;-webkit-box-shadow: none;-moz-box-shadow: none;font-size: 16px;color:var(--theme-title);-webkit-appearance: none;font-family: 'SFProDisplay', sans-serif;font-weight: 300;padding:18px 16px;height: 56px;} 
 
 /* Focus State CSS */
 .form-control.border:focus,.form-select.border:focus {box-shadow: none;-webkit-box-shadow: none;-moz-box-shadow: none;border-color:var(--theme-primary)!important;}
 
 /* Placeholder CSS */
-.form-control.border::placeholder{color:var(--theme-gray1);font-weight:200;font-size:16px;}
-.form-control.border::-moz-placeholder{color:var(--theme-gray1);font-weight:200;font-size:16px;}
-.form-control.border:-ms-input-placeholder{color:var(--theme-gray1);font-weight:200;font-size:16px;}
-.form-control.border::-webkit-input-placeholder{color:var(--theme-gray1);font-weight:200;font-size:16px;}
-.form-control.border::-o-input-placeholder{color:var(--theme-gray1);font-weight:200;font-size:16px;}
+.form-control.border::placeholder{color:var(--theme-gray1);font-weight:300;font-size:16px;}
+.form-control.border::-moz-placeholder{color:var(--theme-gray1);font-weight:300;font-size:16px;}
+.form-control.border:-ms-input-placeholder{color:var(--theme-gray1);font-weight:300;font-size:16px;}
+.form-control.border::-webkit-input-placeholder{color:var(--theme-gray1);font-weight:300;font-size:16px;}
+.form-control.border::-o-input-placeholder{color:var(--theme-gray1);font-weight:300;font-size:16px;}
 textarea.form-control.border{height:90px;}
 
 input::-webkit-autofill,
@@ -560,9 +568,9 @@ input[type="number"] {
 .mb20{
     margin-bottom: 20px;
 }
-.mtmb20{
-    margin-top: 20px;
-    margin-bottom: 20px;
+.mtmb24{
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 .mtmb16{
     margin-top: 16px;
@@ -603,6 +611,8 @@ input[type="number"] {
 
 .wh-90{width:90px !important; height: 90px !important;}
 .wh-82{width: 82px !important;height: 82px !important;}
+.wh-44{width: 44px !important;height: 44px !important;}
+
 
 .mx-100{max-width:100%!important;}
 .minw-auto{min-width:auto!important;}
@@ -688,7 +698,7 @@ svg.login-btn-icon path {
 .login-btn-link.btn.btn-black{border-radius: 12px;}
 .rightleft-line { margin: 0px auto; text-align: center; position: relative; width: 100%; padding: 10px 55px; }
 .rightleft-line:before { content: ''; height: 1px; background: var(--theme-gray3); left: 0px; top: 50%; right: 0px; display: block; position: absolute; transform: translateY(-50%); z-index: 0; }
-.rightleft-line span { display: inline-block; background: var(--theme-body);font-size: 16px;color: #A2A2A2; padding: 5px 20px; position: relative; z-index: 1; }
+.rightleft-line span { display: inline-block; background: var(--theme-body);font-size: 16px;color: #A2A2A2; padding: 5px 20px; position: relative; z-index: 1; font-weight: 300;}
 .code-input { max-width: 120px; height: 48px;width: 100%; border: 1px solid #9EA1A8; border-radius: 12px; text-align: center; font-size: 14px; font-weight: 400; color: #121A2C; background: var(--theme-background);margin-right: 10px; transition: all 0.3s ease; }
 .code-input:last-child {margin-right: 0;}
 .verification-code-inputs { display: flex; flex-wrap: nowrap; align-items: center;margin-bottom: 10px; }
@@ -930,7 +940,7 @@ span.login-btn-link-text {line-height: 20px;}
     position: relative;
     background-color: var(--theme-body);
     color: var(--theme-primary);
-    font-weight: 200;
+    font-weight: 400;
     line-height: 1.5;
     padding: 5px 12px;
     font-size: 12px;
@@ -967,6 +977,9 @@ span.login-btn-link-text {line-height: 20px;}
     -ms-border-radius: 12px;
     -o-border-radius: 12px;
 }
+.icon-box-style img {
+    padding: 4px;
+}
 .avatar-lg{
     width: 44px;
     height: 44px;
@@ -996,7 +1009,7 @@ span.login-btn-link-text {line-height: 20px;}
     color: var(--sec-title);
     text-transform: uppercase;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 600;
     letter-spacing: 0.4px;
 }
 
@@ -1011,6 +1024,14 @@ span.login-btn-link-text {line-height: 20px;}
     -o-border-radius: 50px;
     background-color: var(--theme-icon);
     margin: 0 4px;
+}
+
+.arrow_icon {
+    flex: 0 0 auto;
+}
+
+.dele-icon{
+    background-color: #FFEBEA;
 }
 
 .p-user-info h2{
@@ -1060,8 +1081,21 @@ span.login-btn-link-text {line-height: 20px;}
     align-items: center;
     text-align: start;
 }
+.p-user-info {
+    width: 100%;
+    padding-right: 150px;
+}
 .settings-item-group hr:last-of-type {
     display: none;
+}
+.premium-plan-info .sub_text_color {
+    letter-spacing: 0.4px;
+}
+.settings-item {
+    gap: 15px;
+}   
+.s-middle-text {
+    flex: 1;
 }
 
 

@@ -80,8 +80,7 @@
     color: var(--theme-black);
     display: inline-block;
     width: 100%;
-    font-weight: bold;
-    letter-spacing: -0.4px;
+    font-weight: 600;
 }
 
 .ha-dropdown-click.dropdown-toggle::after {
@@ -114,7 +113,7 @@
 
 .ha-dropdown-click .user-menu .h-admin-info span:last-child {
     color: var(--theme-gray4);
-    font-weight: 200;
+    font-weight: 400;
     font-size: 12px;
     margin-top: 3px;
     text-transform: capitalize;

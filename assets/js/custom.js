@@ -24,3 +24,10 @@ $(document).ready(function(){
     });
 
 /*********** Sidebar toggle JS End ***********/
+
+
+
+/*********** When scrolling up → add .scrollup in header JS Start ***********/
+
+/*********** When scrolling up → add .scrollup in header JS End ***********/
+

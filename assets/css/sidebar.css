@@ -87,7 +87,7 @@
     color: var(--theme-gray1);
     margin-bottom: 0px;
     font-size: 16px;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .main-sidebar li.sb-nav-item .sb-nav-link:hover {
@@ -109,7 +109,7 @@
 
 .main-sidebar li.sb-nav-item.active .sb-nav-link p {
     color: var(--theme-primary);
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .main-sidebar li.sb-nav-item .sb-nav-link svg path {
@@ -353,7 +353,7 @@ body.sidebar-show-hide {
 
     .content-wrapper {
         min-height: calc(100vh - 86px);
-        margin-left: 210px;
+        margin-left: 230px;
         margin-top: 86px;
         padding-left: 15px;
         padding-right: 15px;
@@ -402,6 +402,10 @@ body.sidebar-show-hide {
 
     .main-sidebar {
         width: 210px;
+    }
+
+    .content-wrapper {
+        margin-left: 210px;
     }
 
 }
