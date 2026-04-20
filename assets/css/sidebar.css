@@ -420,8 +420,12 @@ body.sidebar-show-hide {
     }
 
     .main-sidebar .sb-nav-item .sb-nav-link .countbadge {
-        right: 12px;
-        top: 0;
+        transform-origin: 130px -80px;
+        transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -o-transform: scale(0.9);
     }
 
     .sidebar-show-hide .main-sidebar .sb-nav-item .sb-nav-link {
@@ -457,12 +461,13 @@ body.sidebar-show-hide {
     }
 
     .sidebar.sidebar-menu-main {
-        padding: 15px 6px;
+        padding: 30px 6px 15px;
+        margin: 0 5px;
     }
 
 
     .content-wrapper {
-        margin-left: calc(45px + 5px);
+        margin-left: 60px;
         padding-left: 10px;
         padding-right: 10px;
         margin-top: 72px;
