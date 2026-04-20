@@ -1058,6 +1058,10 @@ span.login-btn-link-text {line-height: 20px;}
 .premium-plan-info {
     display: flex;
     align-items: center;
+    text-align: start;
+}
+.settings-item-group hr:last-of-type {
+    display: none;
 }
 
 
