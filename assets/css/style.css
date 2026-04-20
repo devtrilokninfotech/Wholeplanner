@@ -903,6 +903,7 @@ span.login-btn-link-text {line-height: 20px;}
     Profile Page
 =================================================================================*/
 .content-wrapper {
+    overflow: hidden;
     margin-left: 300px;
     min-height: calc(100vh - 124px);
     padding-left: 30px;
@@ -913,6 +914,10 @@ span.login-btn-link-text {line-height: 20px;}
     -moz-transition: margin-left .3s ease-in-out;
     -ms-transition: margin-left .3s ease-in-out;
     -o-transition: margin-left .3s ease-in-out;
+}
+
+.sidebar-show-hide .content-wrapper {
+    margin-left: 120px;
 }
 
 .cm-layout{
