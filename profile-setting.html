@@ -511,7 +511,6 @@
                         <div class="profile-user-p d-flex gap-sm-3 gap-2 mb_14">
                             <div class="avatar-lg wh-82">
                                 <span>ah</span>
-                                <!-- <img src="assets/images/h-user-img.jpg" alt="#"> -->
                             </div>
                             <div class="logo-form-la w-100">
                                 <div class="form-group mb-0 logo-form-la">
@@ -807,11 +806,10 @@
                     <div class="border-0 rounded-0 p-0">
                         <div class="row gx-2">
                             <div class="col-6">
-                                <button type="button" class="btn btn-secondary w-100" data-bs-dismiss="modal">Don’t
-                                    Delete Account</button>
+                                <button type="button" class="btn btn-secondary w-100" data-bs-dismiss="modal">No</button>
                             </div>
                             <div class="col-6">
-                                <button type="submit" class="btn btn-primary w-100">Yes, Delete Account</button>
+                                <button type="submit" class="btn btn-primary w-100">Yes</button>
                             </div>
                         </div>
                     </div>
@@ -861,6 +859,32 @@
     <!-- =================== WEB JS ==================== -->
 
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const editModal = document.getElementById('EditProfile');
+
+            editModal.addEventListener('show.bs.modal', function () {
+
+                // Get data from profile section
+                const name = document.querySelector('.p-user-info h2').childNodes[0].nodeValue.trim();
+                const profession = document.querySelector('.pr-badge').textContent.trim();
+
+                const tags = document.querySelectorAll('.custom-tags-wrap .badge-text');
+
+                // Set values in modal inputs
+                document.querySelector('#EditProfile input[placeholder="Your name"]').value = name;
+                document.querySelector('#EditProfile input[placeholder="Chief Executive Officer"]').value = profession;
+
+                // Reset all checkboxes first
+                document.querySelectorAll('#EditProfile input[type="checkbox"]').forEach(cb => {
+                    cb.checked = false;
+                });
+
+            });
+
+        });
+    </script>
 </body>
 
 </html>

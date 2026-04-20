@@ -322,6 +322,12 @@ Large devices
         padding-right: 140px;
     }
 
+    .wh-82 {
+        width: 70px !important;
+        height: 70px !important;
+    }
+
+
     /* end */
 }
 
@@ -1257,6 +1263,10 @@ Extra small devices (portrait phones, less than 576px)
 @media (max-width:480px) {
     .custom-indicators {
         top: calc(100% - 148px);
+    }
+    .wh-82 {
+        width: 65px !important;
+        height: 65px !important;
     }
 
 }
