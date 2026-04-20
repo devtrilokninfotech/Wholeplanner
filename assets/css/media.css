@@ -990,6 +990,10 @@ Large devices
         max-width: 600px;
     }
 
+    .br20 {
+        border-radius: 16px;
+    }
+
 }
 
 
