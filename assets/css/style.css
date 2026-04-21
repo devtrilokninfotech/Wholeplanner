@@ -284,7 +284,18 @@ hr,.hr {
 .border-0{
     border: 0 !important;
 }
-
+.border-right-0{
+    border-right: 0 !important;
+}
+.border-left-0{
+    border-left: 0 !important;
+}
+.border-top-0{
+    border-top: 0 !important;
+}
+.border-bottom-0{
+    border-bottom: 0 !important;
+}
 
 .br5{border-radius:5px;}        
 .br10{border-radius:10px;}
@@ -1114,7 +1125,12 @@ span.login-btn-link-text {line-height: 20px;}
 .s-middle-text {
     flex: 1;
 }
-
+.more-badge{
+    cursor: pointer;
+}
+.extra-badge {
+    display: none;
+}
 
 /* Common Modal Styles */
 .common-modal .modal-header-cm .modal-header {

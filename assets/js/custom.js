@@ -27,7 +27,12 @@ $(document).ready(function(){
 
 
 
-/*********** When scrolling up → add .scrollup in header JS Start ***********/
-
-/*********** When scrolling up → add .scrollup in header JS End ***********/
+/*********** On click → show all badges - Profile Page ***********/
+$(document).ready(function () {
+    $(".more-badge").click(function () {
+        $(".extra-badge").fadeIn(40); // show hidden badges
+        $(this).hide(); 
+    });
+});
+/*********** On click → show all badges - Profile Page ***********/
 

@@ -939,10 +939,15 @@ Large devices
         margin-left: 0 !important;
     }
 
+    .p-user-info .pr-badge{
+        background-color: var(--theme-primary-light) !important;
+        color: var(--theme-primary) !important;
+        font-weight: 500 !important;
+    }
+
     .p-user-info h2 {
-        gap: 4px 10px;
+        gap: 6px 10px;
         flex-wrap: wrap;
-        /* margin-bottom: 8px !important; */
     }
 
     .p-user-menu {
@@ -1268,6 +1273,7 @@ Extra small devices (portrait phones, less than 576px)
     .custom-indicators {
         top: calc(100% - 148px);
     }
+
     .wh-82 {
         width: 65px !important;
         height: 65px !important;
