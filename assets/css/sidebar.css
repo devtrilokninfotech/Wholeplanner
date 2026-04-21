@@ -135,6 +135,16 @@
     opacity: 1;
 }
 
+.main-sidebar li.sb-nav-item .sb-nav-link:hover .sb-nav-icon path.i-fill {
+    visibility: visible;
+    opacity: 1;
+    fill: var(--theme-primary);
+}
+
+.main-sidebar li.sb-nav-item .sb-nav-link:hover .sb-nav-icon path.i-border {
+    opacity: 0;
+}
+
 .sidebar-show-hide .main-sidebar {
     width: 120px;
 }
@@ -437,8 +447,6 @@ body.sidebar-show-hide {
 
 }
 
-@media(max-width:991px) {}
-
 @media(max-width:767px) {
     .countbadge {
         min-width: 18px;
@@ -546,4 +554,10 @@ body.sidebar-show-hide {
     }
 
 
+}
+
+@media(max-width:575px) {
+    .sidebar.sidebar-menu-main {
+        margin: 0 3px;
+    }
 }
