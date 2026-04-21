@@ -327,6 +327,10 @@ Large devices
         height: 70px !important;
     }
 
+    .profile-user-p span {
+        font-size: 28px;
+    }
+
 
     /* end */
 }
@@ -453,6 +457,8 @@ Large devices
         top: calc(100% - 140px);
     }
 
+    
+
 }
 
 
@@ -572,6 +578,10 @@ Large devices
     /* popup modal css */
     .custom-indicators {
         top: calc(100% - 130px);
+    }
+
+    .profile-user-p span {
+        font-size: 25px;
     }
 
 }
