@@ -383,6 +383,7 @@ body.sidebar-show-hide {
     .countbadge {
         min-width: 18px;
         height: 18px;
+        line-height: 18px;
     }
 
     .sidebar-show-hide .main-sidebar .sb-nav-item .sb-nav-link .countbadge {
@@ -449,7 +450,7 @@ body.sidebar-show-hide {
     .countbadge {
         min-width: 18px;
         height: 18px;
-        padding: 4px;
+        padding: 0;
     }
 
     .sidebar-show-hide .main-sidebar .sb-nav-item .sb-nav-link .countbadge {
