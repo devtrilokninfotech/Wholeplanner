@@ -136,13 +136,11 @@
 }
 
 .main-sidebar li.sb-nav-item .sb-nav-link:hover .sb-nav-icon path.i-fill {
-    visibility: visible;
-    opacity: 1;
     fill: var(--theme-primary);
 }
 
 .main-sidebar li.sb-nav-item .sb-nav-link:hover .sb-nav-icon path.i-border {
-    opacity: 0;
+    fill: var(--theme-primary);
 }
 
 .sidebar-show-hide .main-sidebar {
