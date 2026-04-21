@@ -507,10 +507,13 @@ body.sidebar-show-hide {
     }
 
     .sidebar.sidebar-menu-main {
-        padding: 30px 6px 15px;
+        padding: 20px 6px 15px;
         margin: 0 5px;
     }
 
+    .main-logo-wrapper {
+        padding: 20px 10px 0;
+    }
 
     .content-wrapper {
         margin-left: 60px;
@@ -551,6 +554,9 @@ body.sidebar-show-hide {
         z-index: 999;
     }
 
+    .sidebar-show-hide .headera-logo-wrap {
+        width: 250px;
+    }
 
 }
 
