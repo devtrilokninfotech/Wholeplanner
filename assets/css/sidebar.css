@@ -143,6 +143,11 @@
     fill: var(--theme-primary);
 }
 
+.main-sidebar li.sb-nav-item.trash-sidebar.active .sb-nav-link svg path.i-border {
+    fill: #fff !important;
+}
+
+
 .sidebar-show-hide .main-sidebar {
     width: 120px;
 }
