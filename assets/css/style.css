@@ -1114,6 +1114,8 @@ span.login-btn-link-text {line-height: 20px;}
     width: 100%;
     padding-right: 150px;
 }
+
+.notification-page hr:last-of-type,
 .settings-item-group hr:last-of-type {
     display: none;
 }
