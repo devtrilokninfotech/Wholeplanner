@@ -1295,11 +1295,19 @@ Extra small devices (portrait phones, less than 576px)
     }
 
     .no-time {
-        top: 35px;
+        top: 32px;
     }
 
-    .notification-page .p-16 {
+    .profile-header .notification-h-main {
         padding: 10px !important;
+    }
+
+    .header-right img {
+        display: none;
+    }
+
+    .header-left .unread-badge {
+        display: none;
     }
 
 }
@@ -1323,9 +1331,9 @@ Extra small devices (portrait phones, less than 576px)
         gap: 8px;
     }
 
-    /* .no-time p {
+    .no-time p {
         font-size: 12px;
-    } */
+    }
 
 }
 
@@ -1358,7 +1366,7 @@ Extra small devices (portrait phones, less than 576px)
         top: calc(100% - 173px);
     }
 
-    .header-left {
+    /* .header-left {
         gap: 5px;
     }
 
@@ -1372,6 +1380,6 @@ Extra small devices (portrait phones, less than 576px)
 
     .header-right .fs-18 {
         font-size: 12px !important;
-    }
+    } */
 
 }
