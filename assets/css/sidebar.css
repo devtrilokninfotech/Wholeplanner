@@ -226,10 +226,6 @@
     width: 107px;
 }
 
-body.sidebar-show-hide {
-    overflow: hidden;
-}
-
 @media(max-width:1799px) {
     .content-wrapper {
         margin-left: 260px;
@@ -452,6 +448,10 @@ body.sidebar-show-hide {
 }
 
 @media(max-width:767px) {
+    body.sidebar-show-hide {
+        overflow: hidden;
+    }
+
     .countbadge {
         min-width: 18px;
         height: 18px;

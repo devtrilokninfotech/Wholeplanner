@@ -14,7 +14,6 @@ body {
     line-height: normal;
     color: var(--theme-text-color);
     text-transform: none;
-    overflow-y: auto !important;
 }
 :root{
     --theme-body:#F9F9F9;
