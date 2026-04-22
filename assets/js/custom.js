@@ -30,9 +30,29 @@ $(document).ready(function(){
 /*********** On click → show all badges - Profile Page ***********/
 $(document).ready(function () {
     $(".more-badge").click(function () {
-        $(".extra-badge").fadeIn(40); // show hidden badges
-        $(this).hide(); 
+        $(this).closest(".cm-tags-js").find(".extra-badge").fadeIn(40);
+        $(this).hide();
     });
 });
 /*********** On click → show all badges - Profile Page ***********/
 
+
+
+/*********** Menu toggle btn on card - Common JS ***********/
+$(document).ready(function () {
+
+    // Toggle dropdown on click
+    $(".menu-toggle-btn").click(function (e) {
+        e.stopPropagation();
+        var $dropdown = $(this).siblings(".card-dropdown");
+        // Close all other open dropdowns first
+        $(".card-dropdown").not($dropdown).removeClass("open");
+        $dropdown.toggleClass("open");
+    });
+
+    // Close dropdown when clicked outside
+    $(document).click(function () {
+        $(".card-dropdown").removeClass("open");
+    });
+})
+/*********** Menu toggle btn on card - Common JS ***********/

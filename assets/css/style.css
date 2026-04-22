@@ -32,6 +32,8 @@ body {
     --disabled-btn: #B4B4B4;
 
     --theme-red: #E8593C;
+    --theme-delete-red: #FF3B30;
+    --theme-del-dark-red: #E84958;
 
     --theme-gray1: #808080;
     --theme-gray2: #4D4D4D;
@@ -568,6 +570,9 @@ input[type="number"] {
 /* Spacing Classes */
 .p-14{padding:14px;}
 .p-16{padding: 16px;}
+.p16{
+    padding: 16px;
+}
 .p20{
     padding: 20px;
 }
@@ -645,8 +650,6 @@ input[type="number"] {
 
 .mx-100{max-width:100%!important;}
 .minw-auto{min-width:auto!important;}
-
-
 
 
 
@@ -1128,10 +1131,10 @@ span.login-btn-link-text {line-height: 20px;}
 .s-middle-text {
     flex: 1;
 }
-.more-badge{
+.cm-tags-js .more-badge{
     cursor: pointer;
 }
-.extra-badge {
+.cm-tags-js .extra-badge {
     display: none;
 }
 
@@ -1148,6 +1151,12 @@ span.login-btn-link-text {line-height: 20px;}
 /* pop-up css */
 .profile-user-p {margin-bottom: 14px;}
 .profile-user-p span {font-size: 34px;font-weight: 700;}
+
+
+
+/*===============================================================================
+    Notification Page
+=================================================================================*/
 
 .notifi-lg {
     width: 54px;
@@ -1216,4 +1225,220 @@ span.login-btn-link-text {line-height: 20px;}
 
 .notification-page {
     margin-bottom: 20px;
+}
+
+
+
+/*===============================================================================
+    Trash Page
+=================================================================================*/
+.search-input .form-control.border{
+    background-image: url(../images/search-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    background-size: 16px;
+    padding: 12px 16px 12px 46px;
+    height: auto;
+    border-color: transparent !important;
+}
+.search-input .form-control.border:focus{
+    border-color: var(--theme-primary) !important;
+}
+.search-input .form-control.border::placeholder,
+.search-input .form-control.border::-moz-placeholder,
+.search-input .form-control.border:-ms-input-placeholder,
+.search-input .form-control.border::-webkit-input-placeholder,
+.search-input .form-control.border::-o-input-placeholder{
+    color: var(--theme-gray1);
+    font-weight: 500;
+}
+.search-input {
+    max-width: 400px;
+}
+.trash-page .main-card-footer{
+    display: flex;
+    align-items: center;
+}
+.main-card{
+    overflow: hidden;
+    position: relative;
+    border: 1px solid var(--theme-gray3);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main-card-body{
+    flex-grow: 1;
+}
+.main-card-content {
+    flex-grow: 1;
+}
+.date-range{
+    font-size: 12px;
+    color: var(--theme-icon);
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.deleted-badge{
+    font-size: 12px;
+    color: var( --theme-delete-red);
+    background-color: rgba(255, 59, 48, 0.15);
+    font-weight: 400;
+    border-radius: 6px;
+    padding: 7px 6px;
+}
+.priority-badge{
+    display: inline-block;
+    font-size: 12px;
+    color: var( --theme-delete-red);
+    background-color: rgba(255, 59, 48, 0.15);
+    font-weight: 400;
+     border-radius: 6px;
+    padding: 5px 7px;
+}
+.category-label{
+    color: var(--theme-primary);
+    font-size: 14px;
+    font-weight: 400;
+}
+.trash-page .main-card-body {
+    display: flex;
+    align-items: start;
+    gap: 8px;
+}
+.main-card-title{
+    padding-bottom: 5px;
+}
+.user-tag{
+    display: inline-block;
+    z-index: 1;
+    position: relative;
+    background-color: #EFEEF0;
+    color: var(--theme-gray1);
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 5px 10px;
+    font-size: 12px;
+    margin-right: 8px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+.user-tag:last-child{
+    margin-right: 0;
+}
+.user-tags{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 0;
+}
+.task-name, .task-status {
+    font-size: 14px;
+    color: var(--theme-gray1);
+    font-weight: 300;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+.task-status {
+    width: max-content;
+    flex-shrink: 0;
+    justify-content: end;
+}
+.task-name {
+    min-width: 0;
+    flex: 1;
+}
+
+.status-icon{
+    width: 14px;
+    height: 14px;
+}
+.card-info-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.card-info-wrap .card-info-item:last-child {
+    margin-bottom: 0;
+}
+.card-menu-wrap {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    z-index: 1;
+}
+.menu_btn{
+    background-color: transparent;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+     transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+.menu_btn:hover {
+    background-color: var(--theme-gray3);
+}
+.card-dropdown {
+    display: none;
+    position: absolute;
+    right: 6px;
+    top: 22px;
+    min-width: 184px;
+    background-color: var(--theme-background);
+    border-radius: 14px;
+    z-index: 2;
+    padding: 10px;
+    box-shadow: 2px 4px 12px 0px rgba(0, 0, 0, 0.15)
+}
+.card-dropdown.open {
+    display: block;
+}
+.card-dropdown .dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    padding: 6px 6px;
+    margin-bottom: 4px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+.card-dropdown .dropdown-item:last-child{
+    margin-bottom: 0;
+}   
+.card-dropdown .dropdown-item.delete-btn{
+    color: var( --theme-del-dark-red);
+}
+.card-dropdown .dropdown-item:hover {
+    background-color: var(--theme-body);
+}
+.c-wrap-title-date {
+    padding-right: 30px;
+}
+.main-card-body .card-info-item .wh-fix{
+    padding-right: 12px;
+    flex: 1;
+    min-width: 0;
 }

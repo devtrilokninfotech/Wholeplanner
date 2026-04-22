@@ -331,6 +331,69 @@ Large devices
         font-size: 28px;
     }
 
+    /* end */
+
+    /* Trash Page */
+    .deleted-badge svg,
+    .deleted-badge img {
+        height: 13px;
+        width: 13px;
+    }
+
+    .deleted-badge {
+        font-size: 11px;
+        border-radius: 4px;
+        padding: 6px 6px;
+    }
+
+    .priority-badge {
+        font-size: 11px;
+        padding: 4px 6px;
+    }
+
+    .user-tag {
+        line-height: 1.2;
+        font-size: 11px;
+    }
+
+    .card-info-item {
+        margin-bottom: 6px;
+    }
+
+    .trash-page .main-card-footer {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
+    .card-dropdown {
+        padding: 6px;
+        min-width: 180px;
+        border-radius: 12px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        -ms-border-radius: 12px;
+        -o-border-radius: 12px;
+    }
+
+    .card-dropdown .dropdown-item {
+        font-size: 13px;
+        padding: 4px 6px;
+    }
+
+    .task-name,
+    .task-status {
+        font-size: 13px;
+        gap: 4px;
+    }
+
+    .status-icon {
+        width: 13px;
+        height: 13px;
+    }
+
+    .category-label {
+        font-size: 13px;
+    }
 
     /* end */
 }
@@ -457,7 +520,46 @@ Large devices
         top: calc(100% - 140px);
     }
 
-    
+    /* Trash Page */
+    .main-card-body .icon-box-style {
+        width: 32px;
+        height: 32px;
+        border-radius: 8px;
+    }
+
+    .main-card-body .icon-box-style svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .card-dropdown {
+        min-width: 174px;
+    }
+
+    .date-range {
+        font-size: 11px;
+    }
+
+    .date-range svg {
+        height: 12px;
+        width: 12px;
+    }
+
+    .main-card-body .mtb_10 {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .trash-page .main-card-footer {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .main-card-body .card-info-item .wh-fix {
+        padding-right: 10px;
+    }
+
+    /* end */
 
 }
 
@@ -583,6 +685,77 @@ Large devices
     .profile-user-p span {
         font-size: 25px;
     }
+
+    /* Trash Page */
+    .trash-page .main-card-body {
+        gap: 6px;
+    }
+
+    .priority-badge {
+        padding: 3px 6px;
+    }
+
+    .deleted-badge {
+        padding: 4px 6px;
+        font-size: 10px;
+    }
+
+    .deleted-badge svg,
+    .deleted-badge img {
+        height: 11px;
+        width: 11px;
+    }
+
+    .main-card-body .icon-box-style {
+        width: 28px;
+        height: 28px;
+        border-radius: 5px;
+    }
+
+    .main-card-body .icon-box-style svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .task-name,
+    .task-status {
+        font-size: 12px;
+    }
+
+    .status-icon {
+        width: 12px;
+        height: 12px;
+    }
+
+    .card-dropdown .dropdown-item img {
+        width: 20px;
+    }
+
+    .card-dropdown {
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+
+    .c-wrap-title-date {
+        padding-right: 25px;
+    }
+
+    .category-label {
+        font-size: 11px;
+    }
+
+    .menu_btn {
+        padding: 4px 8px;
+    }
+
+    .card-menu-wrap {
+        right: 12px;
+    }
+
+    /* end */
 
 }
 
@@ -954,7 +1127,7 @@ Large devices
         margin-left: 0 !important;
     }
 
-    .p-user-info .pr-badge{
+    .p-user-info .pr-badge {
         background-color: var(--theme-primary-light) !important;
         color: var(--theme-primary) !important;
         font-weight: 500 !important;
@@ -1218,6 +1391,14 @@ Extra small devices (portrait phones, less than 576px)
         padding: 16px;
     }
 
+    .cm-layout.p16 {
+        padding: 10px;
+    }
+
+    .p16 {
+        padding: 12px;
+    }
+
     .offcanvas-btn-wrap .btn {
         margin: 2px;
     }
@@ -1309,7 +1490,16 @@ Extra small devices (portrait phones, less than 576px)
     .header-left .unread-badge {
         display: none;
     }
+    /* Trash Page */
+    .c-wrap-title-date {
+        padding-right: 30px;
+    }
 
+    .user-tags {
+        gap: 5px 0;
+    }
+
+    /* end */
 }
 
 @media (max-width:480px) {
@@ -1350,9 +1540,27 @@ Extra small devices (portrait phones, less than 576px)
     .carousel-item img {
         margin-bottom: 50px;
     }
+
 }
 
-@media (max-width:320px) {
+@media (max-width:350px) {
+
+    /* Trash Page */
+    .trash-page .main-card-footer {
+        align-items: start !important;
+    }
+
+    .trash-page .main-card-footer p {
+        line-height: 1.2;
+    }
+
+    .card-info-item {
+        flex-direction: column;
+        align-items: start;
+        gap: 6px;
+    }
+
+    /* end */
     .modal-pop {
         padding: 50px 30px;
     }
