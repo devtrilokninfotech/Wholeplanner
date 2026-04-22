@@ -786,6 +786,11 @@ Large devices
     }
 
     /* end */
+
+    .no-time p {
+        font-size: 14px;
+    }
+
 }
 
 
@@ -1010,7 +1015,7 @@ Large devices
     }
 
     .no-time {
-        top: 28px;
+        top: 25px;
     }
 
     .notifi-lg {
@@ -1317,6 +1322,10 @@ Extra small devices (portrait phones, less than 576px)
     .header-left {
         gap: 8px;
     }
+
+    /* .no-time p {
+        font-size: 12px;
+    } */
 
 }
 
