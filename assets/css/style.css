@@ -567,6 +567,7 @@ input[type="number"] {
 
 /* Spacing Classes */
 .p-14{padding:14px;}
+.p-16{padding: 16px;}
 .p20{
     padding: 20px;
 }
@@ -1145,3 +1146,72 @@ span.login-btn-link-text {line-height: 20px;}
 /* pop-up css */
 .profile-user-p {margin-bottom: 14px;}
 .profile-user-p span {font-size: 34px;font-weight: 700;}
+
+.notifi-lg {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--theme-primary-light);
+    color: var(--theme-primary);
+    flex-shrink: 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.no-time {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.notification-h-main {
+    background-color: rgba(198, 124, 78, 0.05);
+}
+
+.notification-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 16px;
+}
+ 
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+ 
+.unread-badge {
+    background: var(--theme-primary-light);
+    color: var(--theme-primary);
+    padding: 4px 11px;
+    border-radius: 23px;
+    font-size: 12px;
+    font-weight: 700;
+}
+ 
+.mark-all-read {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+}
+
+.notification-page {
+    margin-bottom: 20px;
+}

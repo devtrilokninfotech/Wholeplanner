@@ -1009,6 +1009,15 @@ Large devices
         border-radius: 16px;
     }
 
+    .no-time {
+        top: 28px;
+    }
+
+    .notifi-lg {
+        width: 45px;
+        height: 45px;
+    }
+
 }
 
 
@@ -1016,7 +1025,6 @@ Large devices
 // Small devices (landscape phones, less than 768px)
 ===========================================================*/
 @media (max-width: 767px) {
-
 
     h1,
     .h1 {
@@ -1149,6 +1157,11 @@ Large devices
         margin: 0 20px;
     }
 
+    .notifi-lg {
+        width: 40px;
+        height: 40px;
+    }
+
 }
 
 
@@ -1276,6 +1289,13 @@ Extra small devices (portrait phones, less than 576px)
         top: calc(100% - 140px);
     }
 
+    .no-time {
+        top: 35px;
+    }
+
+    .notification-page .p-16 {
+        padding: 10px !important;
+    }
 
 }
 
@@ -1287,6 +1307,15 @@ Extra small devices (portrait phones, less than 576px)
     .wh-82 {
         width: 65px !important;
         height: 65px !important;
+    }
+
+    .notifi-lg {
+        width: 44px;
+        height: 44px;
+    }
+
+    .header-left {
+        gap: 8px;
     }
 
 }
@@ -1319,4 +1348,21 @@ Extra small devices (portrait phones, less than 576px)
     .custom-indicators {
         top: calc(100% - 173px);
     }
+
+    .header-left {
+        gap: 5px;
+    }
+
+    .unread-badge {
+        font-size: 11px;
+    }
+
+    .mark-all-read {
+        gap: 3px;
+    }
+
+    .header-right .fs-18 {
+        font-size: 12px !important;
+    }
+
 }
