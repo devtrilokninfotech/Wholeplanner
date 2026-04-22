@@ -324,6 +324,7 @@ hr,.hr {
     line-height: 1;
     font-size: 16px;
     font-weight: 400;
+    letter-spacing: 0.2px;
     font-family: 'SFProDisplay', sans-serif;
     text-transform: capitalize;
     box-shadow: none;
@@ -535,6 +536,9 @@ input[type="number"] {
 .text-underline{ text-decoration: underline !important; }
 .text-capitalize{ text-transform: capitalize !important; }
 .text-uppercase{ text-transform: uppercase !important; }
+.text_normal{
+    text-transform: none !important;
+}
 .display-none{ display: none !important; }
 .table-responsive { scrollbar-width: thin; }
 .custom-table-main td{word-break:break-word;}
@@ -649,6 +653,8 @@ input[type="number"] {
 
 .mx-100{max-width:100%!important;}
 .minw-auto{min-width:auto!important;}
+.mx-content{max-width: max-content!important;}
+
 
 
 
@@ -1440,4 +1446,13 @@ span.login-btn-link-text {line-height: 20px;}
     padding-right: 12px;
     flex: 1;
     min-width: 0;
+}
+.restore-delete-task-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #FEF8F4;
+}
+.restore-delete-task-item h3.mx-content{
+    flex: 1;
 }

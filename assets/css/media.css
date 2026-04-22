@@ -1511,6 +1511,14 @@ Extra small devices (portrait phones, less than 576px)
         background-position: 12px center;
     }
 
+    .restore-delete-task-item .icon-box-style {
+        padding: 6px;
+    }
+
+    .common-modal .modal-body {
+        padding: 26px 0 26px;
+    }
+
     /* end */
 }
 
