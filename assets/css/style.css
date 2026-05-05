@@ -1461,3 +1461,317 @@ span.login-btn-link-text {line-height: 20px;}
 /*===============================================================================
     Folder Page
 =================================================================================*/
+/* Custom styling for the subscription modal */
+.vertical-modal-scroll {
+  /* overflow-y: scroll; */
+  padding: 30px;
+}
+
+.modal-title {
+  line-height: 1.2;
+}
+
+.subscription-header {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4px;
+}
+
+/* Close Button */
+.subscription-close {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+.subscription-close:hover {
+  opacity: 0.8;
+  transform: rotate(90deg);
+}
+
+.logo-form-bottom {
+  text-align: center;
+  padding: 30px 0 20px;
+}
+
+.logo-form-bottom .diamond-img {
+  width: 100px;
+  height: 100px;
+}
+
+.logo-form-bottom .logo-title {
+  margin: 10px 0 4px;
+}
+
+.logo-text {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.plan-cards-row {
+  display: flex;
+  gap: 12px;
+}
+
+.plan-wrapper {
+  flex: 1;
+  cursor: pointer;
+}
+
+.plan-card {
+  border-radius: 12px;
+  padding: 16px;
+  background: var(--theme-body);
+  height: 100%;
+  transition: border-color 0.2s, background 0.2s;
+  border: 1.5px solid transparent;
+}
+
+.plan-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.plan-price {
+  color: #c06010;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.discount-badge {
+  background: var(--theme-primary);
+  color: var(--theme-background);
+  font-size: 12px;
+  font-weight: 400;
+  padding: 5px 8px;
+  border-radius: 6px;
+}
+
+.radio-dot {
+  width: 22px;
+  height: 22px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  flex-shrink: 0;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.radio-dot.is-selected {
+  border-color: var(--theme-primary);
+  background: var(--theme-primary);
+  box-shadow: inset 0 0 0 2px #fff;
+}
+
+.plan-tier-name {
+  margin: 6px 0 8px;
+}
+
+.whats-included-label {
+  text-transform: capitalize;
+  letter-spacing: 0.4px;
+  margin-bottom: 8px;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  margin-bottom: 14px;
+}
+
+.feature-list li:last-child {
+  margin-bottom: 0;
+}
+
+.check-badge {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, #C67C4E, #E8B698);
+}
+
+/* Premium card highlight */
+.plan-card.is-selected {
+  border-color: var(--theme-primary);
+  background: #F7F0EC;
+}
+
+/* ── Trial notice ── */
+.trial-notice {
+  background: rgba(198, 124, 78, 0.1);
+  border-radius: 12px;
+  text-align: center;
+  padding: 10px 14px;
+  color: var(--theme-primary);
+  /* margin-top: 16px; */
+  overflow: hidden;
+  max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.trial-notice span {
+  color: var(--theme-primary); 
+}
+
+.footer-btn {
+  margin-top: 30px;
+}
+
+.bg-set-lg {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--theme-primary-light);
+    color: var(--theme-primary);
+    flex-shrink: 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+  .included-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .included-item:last-child { margin-bottom: 0; }
+
+  .check-icon {
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  .included-item span.muted {
+    color: var(--gray1);
+  }
+
+/* ── How it Works section ── */
+.magic-md {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--theme-primary-light);
+    color: var(--theme-primary);
+    flex-shrink: 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+    .how-it-works {
+        padding: 14px 38px 0px;
+    }
+
+  .how-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* font-size: 20px; */
+    font-weight: 500;
+    color: var(--theme-primary);
+  }
+
+  .how-title .scissors-icon {
+    flex-shrink: 0;
+  }
+
+  .steps-list {
+    position: relative;
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+  }
+
+  .steps-list::before {
+    content: '';
+    position: absolute;
+    left: 14px;
+    top: 20px;
+    bottom: 26px;
+    width: 3px;
+    background: var(--theme-primary);
+    z-index: 0;
+  }
+
+  .step-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 28px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .step-item:last-child { margin-bottom: 0; }
+
+  .step-num {
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--theme-primary);
+    border: 2px solid var(--theme-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--theme-background);
+   }
+
+  .step-content { padding-top: 4px; }
+
+  .step-title {
+    /* font-size: 16px; */
+    font-weight: 500;
+    color: #333333;
+    margin-bottom: 2px;
+  }
+
+  .step-desc {
+    /* font-size: 14px; */
+    font-weight: 400;
+    color: #888888;
+    margin: 0;
+  }

@@ -1202,6 +1202,68 @@ Large devices
         height: 45px;
     }
 
+    .logo-form-bottom .diamond-img {
+        width: 85px;
+        height: 85px;
+    }
+
+    /* .steps-list::before {
+        left: 14px;
+        top: 20px;
+        bottom: 65px;
+        width: 2px;
+    } */
+
+    /* .how-title {
+        font-size: 16px;
+    }
+
+    .step-title {
+        font-size: 14px;
+    } */
+
+    .bg-set-lg {
+        width: 50px;
+        height: 50px;
+    }
+
+    .bg-set-lg svg {
+        height: 20px;
+        width: 20px;
+    }
+
+    .step-num {
+        width: 25px;
+        height: 25px;
+    }
+
+    .steps-list::before {
+        left: 12px;
+        bottom: 38px;
+    }
+
+    .step-item {
+        gap: 10px;
+        margin-bottom: 14px;
+    }
+
+    .how-it-works {
+        padding: 15px 0px 0px 5px;
+    }
+
+    .included-item.mb_10 {
+        margin-bottom: 5px;
+    }
+
+    .whats-included-title.mb_10 {
+        margin-bottom: 5px;
+    }
+
+    .magic-md {
+        width: 30px;
+        height: 30px;
+    }
+
 }
 
 
@@ -1338,12 +1400,34 @@ Large devices
 
     .modal-dialog {
         max-width: 100%;
-        margin: 0 20px;
+        /* margin: 0 20px; */
     }
 
     .notifi-lg {
         width: 40px;
         height: 40px;
+    }
+
+    .plan-cards-row {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .listof-included {
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        transition: all 0.4s ease;
+    }
+
+    .plan-card.is-selected {
+        border: 1px solid #D98952;
+        background: #FFF8F3;
+    }
+
+    .vertical-modal-scroll {
+        padding: 20px;
     }
 
 }
@@ -1520,6 +1604,35 @@ Extra small devices (portrait phones, less than 576px)
     }
 
     /* end */
+
+    .modal-padtb {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .subscription-close {
+        top: -16px;
+        width: 14px;
+        height: 14px;
+    }
+
+    .logo-form-bottom {
+        padding: 16px 0 16px;
+    }
+    /* .trial-notice {
+        margin-top: 15px;
+    } */
+    .footer-btn{
+        margin-top: 20px;
+    }
+    .logo-form-bottom .diamond-img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .steps-list::before {
+        width: 2px;
+    }
+
 }
 
 @media (max-width:480px) {
@@ -1550,7 +1663,7 @@ Extra small devices (portrait phones, less than 576px)
 
 @media (max-width:399px) {
     .modal-dialog {
-        margin: 0 16px;
+        /* margin: 0 16px; */
     }
 
     .custom-indicators {
@@ -1594,20 +1707,10 @@ Extra small devices (portrait phones, less than 576px)
         top: calc(100% - 173px);
     }
 
-    /* .header-left {
-        gap: 5px;
+    .steps-list::before {
+        top: 20px;
+        bottom: 50px;
+        width: 2px;
     }
-
-    .unread-badge {
-        font-size: 11px;
-    }
-
-    .mark-all-read {
-        gap: 3px;
-    }
-
-    .header-right .fs-18 {
-        font-size: 12px !important;
-    } */
 
 }
