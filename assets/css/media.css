@@ -402,6 +402,11 @@ Large devices
     }
 
     /* end */
+
+    .trial-notice {
+        border-radius: 12px;
+        padding: 10px;
+    }
 }
 
 
