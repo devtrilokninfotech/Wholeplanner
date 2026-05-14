@@ -44,6 +44,10 @@ body {
     --theme-icon: #666666;
     --sec-title: #A1A1AA;
     --sub-text: #64748B;
+
+    --border: #E8E8E8;
+
+    --topbar-h: 64px;
 }
 
 *,

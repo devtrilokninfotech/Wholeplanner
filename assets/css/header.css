@@ -21,7 +21,9 @@
 
 .header-left-text {
     position: relative;
+    padding-left: 10px;
 }
+
 
 .ha-dropdown-click {
     border-radius: 40px;
@@ -387,9 +389,6 @@
 
 @media(max-width:1499px) {
 
-    .header-left-text {
-        padding-left: 5px;
-    }
 
     .headera-logo img {
         width: 124px;
